@@ -1,0 +1,27 @@
+
+#projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $preto-absoluto;
+    min-height: 100vh;
+    padding: 10px;
+
+    .contain-projetos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 10px 0px;
+
+        .item-projetos {
+            flex: 0 1 280px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            text-align: center;
+            min-height: 190px;
+        }
+    }
+}

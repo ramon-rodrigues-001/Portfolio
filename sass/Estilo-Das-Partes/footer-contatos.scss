@@ -1,0 +1,16 @@
+footer#contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: $preto-claro;
+    color: $color;
+    padding: 20px;
+    min-height: 100vh;
+
+    .footer-cards {
+        max-width: 200px;
+        margin: 10px;
+    }
+}

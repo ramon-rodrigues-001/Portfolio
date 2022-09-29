@@ -1,14 +1,3 @@
-@keyframes img-flutuante {
-  0% {
-    transform: translateY(25px);
-  }
-  50% {
-    transform: translateY(-25px);
-  }
-  100% {
-    transform: translateY(25px);
-  }
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,6 +7,10 @@
 #container-hmf {
   background-color: black;
   font-size: 1.1em;
+}
+
+h2 {
+  color: white;
 }
 
 .span-LetraVermelha {
@@ -48,6 +41,17 @@
   text-decoration: underline;
 }
 
+@keyframes img-flutuante {
+  0% {
+    transform: translateY(25px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(25px);
+  }
+}
 #sobre-mim {
   background-color: black;
   color: white;
@@ -123,7 +127,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: b black;
+  background-color: black;
   min-height: 100vh;
   padding: 10px;
 }

@@ -1,0 +1,26 @@
+#header-home {
+    position: fixed;
+    background-color: $background-header;
+    color: $color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+    width: 100vw;
+
+    #navbar{
+        display: flex;
+        gap: 40px;
+
+        a {
+            font-size: 1em;
+            color: $color;
+            text-decoration: none;
+            transition: .4s;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

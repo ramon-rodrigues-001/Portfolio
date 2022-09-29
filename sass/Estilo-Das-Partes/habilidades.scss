@@ -1,0 +1,44 @@
+
+#habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $preto-claro;
+    min-height: 100vh;
+
+    h2 {
+        color: white;
+    }
+    
+    .title-ability {
+        color: $vermelho;
+        text-align: center;
+    }
+
+    #conteiner-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 20px;
+        padding: 0px 20px;
+
+        .cards {
+            border: 2px solid $color;
+            flex: 0 0 280px;
+
+
+            &:hover {
+                border: 2px solid $vermelho;
+                box-shadow: 1px 1px 10px 5px rgba(255, 0, 0, 0.128);
+            }
+        }
+    }
+
+    #conteiner-resposta-abilidade {
+        color: $color;
+        text-align: center;
+        padding: 20px;
+    }
+}
