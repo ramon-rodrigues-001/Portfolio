@@ -1,0 +1,90 @@
+@keyframes img-flutuante {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.span-LetraVermelha {
+  color: red;
+}
+
+#header-home {
+  background-color: rgb(11, 11, 11);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#header-home #navbar {
+  display: flex;
+  gap: 40px;
+}
+#header-home #navbar a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+}
+#header-home #navbar a:hover {
+  text-decoration: underline;
+}
+
+#sobre-mim {
+  background-color: rgb(5, 5, 5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 0px 50px;
+  min-height: 100vh;
+}
+#sobre-mim #sm-esquerda #span-nome {
+  font-size: 1.5em;
+}
+#sobre-mim #sm-direita {
+  text-align: center;
+}
+#sobre-mim #sm-direita #img-flutuante {
+  transform: translateY(-20px);
+  animation-name: img-flutuante;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  padding: 20px;
+  border: 1.5px solid transparent;
+  border-radius: 10%;
+}
+#sobre-mim #sm-direita #img-flutuante:hover {
+  border: 1.5px solid red;
+}
+
+#abilidades {
+  background-color: rgb(9, 8, 8);
+  min-height: 100vh;
+}
+#abilidades #conteiner-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  padding: 0px 20px;
+}
+#abilidades #conteiner-cards .cards {
+  background-color: aqua;
+  flex: 0 0 300px;
+}
+
+/*# sourceMappingURL=style.css.map */

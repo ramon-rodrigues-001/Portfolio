@@ -1,0 +1,103 @@
+@keyframes img-flutuante {
+    0% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.span-LetraVermelha {
+    color: red;
+}
+
+#header-home {
+    background-color: rgb(11, 11, 11);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    #navbar{
+        display: flex;
+        gap: 40px;
+
+        a {
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            transition: .4s;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+#sobre-mim {
+    background-color: rgb(5, 5, 5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 0px 50px;
+    min-height: 100vh;
+
+    #sm-esquerda {
+
+        #span-nome {
+            font-size: 1.5em;
+        }
+    }
+
+    #sm-direita {
+        text-align: center;
+
+        #img-flutuante {
+            transform:  translateY(-20px);
+            animation-name: img-flutuante;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            padding: 20px;
+            border: 1.5px solid transparent;
+            border-radius: 10%;
+
+            &:hover {
+                border: 1.5px solid red;
+            }
+        }
+    }
+}
+
+#abilidades {
+    background-color: rgb(9, 8, 8);
+    min-height: 100vh;
+
+    #conteiner-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 20px;
+        padding: 0px 20px;
+
+        .cards {
+            background-color: aqua;
+            flex: 0 0 300px;
+        }
+    }
+}
+
+
