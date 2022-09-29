@@ -20,47 +20,131 @@
     <title>Portifolio</title>
 </head>
 <body>
-    <div class="container-hmf">
+    <div id="container-hmf">
         <header id="header-home">
             <h1><span class="span-LetraVermelha">Port</span>folio</h1>
 
             <nav id="navbar">
                 <a href="#sobre-mim">Sobre Mim</a>
-                <a href="#">Abilidades</a>
-                <a href="#">Projetos</a>
-                <a href="#">Contatos</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contatos">Contatos</a>
             </nav>
 
-            <a class="btn btn-outline-danger" href="https://github.com/ramon-rodrigues-001" target="_blank"><i class="bi bi-github"></i>  GITHUB</a>
+            <a class="btn btn-outline-danger" href="https://github.com/ramon-rodrigues-001/Portifolio" target="_blank"><i class="bi bi-github"></i>  GITHUB</a>
         </header>
 
         <main id="main-home">
 
             <!-- SOBRE MIM -->
-            <section class="row" id="sobre-mim">
-                <div class="col-7" id="sm-esquerda">
-                    <h2 class="span-LetraVermelha">Sobre mim</h2>
-                    <p>Ola Meu nome é <span id="span-nome">Ramon rodrigues</span>. <br> Sou desenvolvedor web front-end gosto de ser chamado de Ramon tenho 18 anos e começei os estudos na area da programação em 10/05/2021 des de então sou apaixonado por codigos estudo 3 a 4 horas por dia sem falta, Conheci os codigos pelo canal do curso em video com as aulas de Python dpois disso pasei a estudar html e css ainda no curso em video finalizando os modulos comprei meu primeiro curso proficionalizante da OneBitCode onde aprendi Sass Bootstrap javascript typescript e muito mais</p>
+            <section  id="sobre-mim">
+                <div id="sm-direita">
+                    <img id="img-flutuante" src="imagens/miniComputador.webp" alt="Arte criada por Canaticfr">
                 </div>
-                <div class="col" id="sm-direita">
-                    <img id="img-flutuante" src="imagens/miniComputador.webp" alt="">
+                <div  id="sm-esquerda">
+                    <h2 class="h1"> <span class="span-LetraVermelha">Sobre</span> Mim</h2>
+                    <p>Ola Meu nome é <span id="span-nome">Ramon rodrigues</span>. <br> Sou desenvolvedor web front-end gosto de ser chamado de Ramon tenho 18 anos e começei os estudos na area da programação em 10/05/2021 des de então sou apaixonado por codigos estudo 3 a 4 horas por dia sem falta, Conheci os codigos pelo canal do curso em video com as aulas de Python dpois disso pasei a estudar html e css ainda no curso em video finalizando os modulos comprei meu primeiro curso proficionalizante da OneBitCode onde aprendi Sass Bootstrap javascript typescript e muito mais</p>
                 </div>
             </section>
 
-            <section id="abilidades">
+
+            <!-- Habilidades -->
+            <section id="habilidades">
+                <h2 class="h1 text-center mb-5"><span class="span-LetraVermelha">Abilid</span>ades</span></h2>
                 <div id="conteiner-cards">
-                    <div class="cards" id="c1">1</div>
-                    <div class="cards" id="c2">2</div>
-                    <div class="cards" id="c3">3</div>
-                    <div class="cards" id="c4">4</div>
-                    <div class="cards" id="c5">5</div>
-                    <div class="cards" id="c6">6</div>
+                    <div class="cards" id="c1">
+                        <h3 class="title-ability">HTML5</h3>
+                        <p class="h5 px-2">Avançado</p>
+                    </div>
+                    <div class="cards" id="c2">
+                        <h3 class="title-ability">CSS</h3>
+                        <p class="h5 px-2">Avançado</p>
+                    </div>
+                    <div class="cards" id="c3">
+                        <h3 class="title-ability">JAVASCRIPT</h3>
+                        <p class="h5 px-2">Basico</p>
+                    </div>
+                    <div class="cards" id="c4">
+                        <h3 class="title-ability">SASS</h3>
+                        <p class="h5 px-2">Basico</p>
+                    </div>
+                    <div class="cards" id="c5">
+                        <h3 class="title-ability">BOOTSTRAP</h3>
+                        <p class="h5 px-2">Basico</p>
+                    </div>
+                    <div class="cards" id="c6">
+                        <h3 class="title-ability">PYTHON</h3>
+                        <p class="h5 px-2">Basico</p>
+                    </div>
+
+                    <div class="cards" id="c6">
+                        <h3 class="title-ability">GIT</h3>
+                        <p class="h5 px-2">Iniciante</p>
+                    </div>
+                    <div class="cards" id="c6">
+                        <h3 class="title-ability">TYPESCRIPT</h3>
+                        <p class="h5 px-2">Iniciante</p>
+                    </div>
+                    <div class="cards" id="c6">
+                        <h3 class="title-ability">BULMA</h3>
+                        <p class="h5 px-2">Iniciante</p>
+                    </div>
+                </div>
+                <div class="container" id="conteiner-resposta-abilidade">
+                    <p id="text-resposta">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis accusamus fuga laboriosam magni, dolorum similique veniam repellendus saepe odit eligendi, laborum voluptas, totam non itaque nisi adipisci voluptatem corrupti atque?</p>
+                </div>
+            </section>
+
+
+            <section id="projetos">
+                <div class="contain-projetos" id="projetos-principais">
+                    <div class="item-projetos">
+                        <p class="h1">EM BREVE</p>
+                    </div>
+                    <div class="item-projetos">
+                        <p class="h1">EM BREVE</p>
+                    </div>
+                    <div class="item-projetos">
+                        <p class="h1">EM BREVE</p>
+                    </div>
+                </div>
+                <div class="contain-projetos" id="projetos-secundarios">
+                    <div class="item-projetos">
+                        <p class="h1">EM BREVE</p>
+                    </div>
+                    <div class="item-projetos">
+                        <p class="h1">EM BREVE</p>
+                    </div>
+                    <div class="item-projetos">
+                        <p class="h1">EM BREVE</p>
+                    </div>
                 </div>
             </section>
         </main>
 
-        <footer>
 
+        <!-- FOOTER CONTATOS -->
+        <footer id="contatos">
+            <div>
+                <a class="footer-cards btn btn-outline-danger">
+                    <p class="h1"><i class="bi bi-linkedin"></i></p>
+                    Linkedin
+                </a>
+                <a class="footer-cards btn btn-outline-danger">
+                    <p class="h1"><i class="bi bi-github"></i></p>
+                    Github
+                </a>
+                <a class="footer-cards btn btn-outline-danger" >
+                    <p class="h1"><i class="bi bi-facebook"></i></p>
+                    Facebook
+                </a>
+            </div>
+
+            <p><strong>Email: </strong>ramon.rodrigues.dev@gmail.com</p>
+            <p><strong>Cell: </strong>(33) 97879-2332</p>
+            <p><strong>Endereço: </strong>Capelinha-MG 39680‑000</p>
+
+            <p>Direitos da imagem utilizada: <a href="https://br.freepik.com/autor/canaticfr" target="_blank">Canaticfr</a></p>
         </footer>
     </div>
 </body>
