@@ -17,6 +17,10 @@ h2 {
   color: #ff0000;
 }
 
+input[type=checkbox] {
+  visibility: hidden;
+}
+
 #header-home {
   position: fixed;
   background-color: #292525;
@@ -57,9 +61,8 @@ h2 {
     display: none;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   #header-home {
-    position: relative;
     justify-content: left;
   }
   #header-home #navbar {
@@ -72,16 +75,63 @@ h2 {
     position: absolute;
     top: 0;
     right: 10%;
+    z-index: 999;
     padding: 5px;
   }
   #header-home #hamburguer #menu .tracos {
     background-color: red;
-    margin: 5px;
+    margin: 5px 0px;
+    transition: 0.1s;
     width: 40px;
     height: 5px;
   }
   #header-home #hamburguer #itens {
     display: none;
+  }
+  #header-home #hamburguer #itens a {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 10px;
+  }
+  #header-home #hamburguer #itens a:hover {
+    text-decoration: underline;
+  }
+  #header-home input[type=checkbox]:checked ~ label #hamburguer #itens {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 0px 80%;
+    width: 100vw;
+    height: 60vh;
+    transition: transform 2s, height 2s;
+  }
+  #header-home input[type=checkbox]:checked ~ label #hamburguer #menu {
+    position: absolute;
+    top: 10px;
+  }
+  #header-home input[type=checkbox]:checked ~ label #hamburguer #menu #traco-1 {
+    position: absolute;
+    top: 5px;
+    transform: rotate(50deg);
+    transition: 0.7s;
+  }
+  #header-home input[type=checkbox]:checked ~ label #hamburguer #menu #traco-2 {
+    transform: translateX(-100px);
+    visibility: hidden;
+    transition: 0.1s;
+  }
+  #header-home input[type=checkbox]:checked ~ label #hamburguer #menu #traco-3 {
+    position: absolute;
+    top: 5px;
+    transform: rotate(-50deg);
+    transition: 0.7s;
   }
 }
 @keyframes img-flutuante {
@@ -130,6 +180,14 @@ h2 {
   font-size: 1.5em;
 }
 
+@media screen and (max-width: 700px) {
+  #sobre-mim {
+    text-align: center;
+  }
+  #texto-descartavel {
+    display: none;
+  }
+}
 #habilidades {
   display: flex;
   flex-direction: column;

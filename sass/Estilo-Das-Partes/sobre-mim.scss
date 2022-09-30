@@ -51,3 +51,13 @@
         }
     }
 }
+
+@media screen and (max-width: 700px) {
+    #sobre-mim {
+        text-align: center;
+    }
+    
+    #texto-descartavel {
+        display: none;
+    }
+}
