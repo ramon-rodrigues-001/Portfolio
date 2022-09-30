@@ -10,8 +10,9 @@
     }
 }
 
-
 #sobre-mim {
+    font-size: 1.15em;
+    font-weight: bold;
     background-color: $preto-absoluto;
     color: $color;
     display: flex;
@@ -19,20 +20,12 @@
     align-items: center;
     text-align: justify;
     flex-wrap: wrap;
-    padding: 0px 50px;
-    padding-top: 70px;
+    padding: 70px 50px 0px 50px;
     max-width: 100vw;
     min-height: 100vh;
 
+
     #sm-esquerda {
-        flex: 0 1 600px;
-
-        #span-nome {
-            font-size: 1.5em;
-        }
-    }
-
-    #sm-direita {
         text-align: center;
 
         #img-flutuante {
@@ -46,6 +39,15 @@
             &:hover {
                 border: 1.5px solid $vermelho;
             }
+        }
+    }
+    
+
+    #sm-direita {
+        flex: 0 1 600px;
+
+        #span-nome {
+            font-size: 1.5em;
         }
     }
 }

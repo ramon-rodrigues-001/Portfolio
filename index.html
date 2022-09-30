@@ -16,13 +16,14 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="imagens/miniComputador.webp" type="image/x-icon">
+    
 
     <title>Portifolio</title>
 </head>
 <body>
     <div id="container-hmf">
         <header id="header-home">
-            <h1><span class="span-LetraVermelha">Port</span>folio</h1>
+            <h1 id="logo"><span class="span-LetraVermelha">Port</span>folio</h1>
 
             <nav id="navbar">
                 <a href="#sobre-mim">Sobre Mim</a>
@@ -30,18 +31,35 @@
                 <a href="#projetos">Projetos</a>
                 <a href="#contatos">Contatos</a>
             </nav>
+            
+            <input type="checkbox" name="check-menu" id="check-menu">
+            <label for="check-menu">
+                <menu id="hamburguer">
+                    <div id="menu">
+                        <div class="tracos" id="traco-1"></div>
+                        <div class="tracos" id="traco-2"></div>
+                        <div class="tracos" id="traco-3"></div>
+                    </div>
+                    <nav id="itens">
+                        <a href="#sobre-mim">Sobre Mim</a>
+                        <a href="#habilidades">Habilidades</a>
+                        <a href="#projetos">Projetos</a>
+                        <a href="#contatos">Contatos</a>
+                    </nav>
+                </menu>
+            </label>
 
-            <a class="btn btn-outline-danger" href="https://github.com/ramon-rodrigues-001/Portifolio" target="_blank"><i class="bi bi-github"></i>  GITHUB</a>
+            <a class="btn btn-outline-danger" href="https://github.com/ramon-rodrigues-001/Portifolio" target="_blank" id="butao-github"><i class="bi bi-github"></i>  GITHUB</a>
         </header>
 
         <main id="main-home">
 
             <!-- SOBRE MIM -->
             <section  id="sobre-mim">
-                <div id="sm-direita">
+                <div id="sm-esquerda">
                     <img id="img-flutuante" src="imagens/miniComputador.webp" alt="Arte criada por Canaticfr">
                 </div>
-                <div  id="sm-esquerda">
+                <div  id="sm-direita">
                     <h2 class="h1"> <span class="span-LetraVermelha">Sobre</span> Mim</h2>
                     <p>Ola Meu nome é <span id="span-nome">Ramon rodrigues</span>. <br> Sou desenvolvedor web front-end gosto de ser chamado de Ramon tenho 18 anos e começei os estudos na area da programação em 10/05/2021 des de então sou apaixonado por codigos estudo 3 a 4 horas por dia sem falta, Conheci os codigos pelo canal do curso em video com as aulas de Python dpois disso pasei a estudar html e css ainda no curso em video finalizando os modulos comprei meu primeiro curso proficionalizante da OneBitCode onde aprendi Sass Bootstrap javascript typescript e muito mais</p>
                 </div>
@@ -100,24 +118,24 @@
                 <h2 class="h1 text-center mb-5"><span class="span-LetraVermelha">Proj</span>etos</span></h2>
                 <div class="contain-projetos" id="projetos-principais">
                     <div class="item-projetos">
-                        <p class="h1">EM BREVE</p>
+                        <p class="h1">VAZIO</p>
                     </div>
                     <div class="item-projetos">
-                        <p class="h1">EM BREVE</p>
+                        <p class="h1">VAZIO</p>
                     </div>
                     <div class="item-projetos">
-                        <p class="h1">EM BREVE</p>
+                        <p class="h1">VAZIO</p>
                     </div>
                 </div>
                 <div class="contain-projetos" id="projetos-secundarios">
                     <div class="item-projetos">
-                        <p class="h1">EM BREVE</p>
+                        <p class="h1">VAZIO</p>
                     </div>
                     <div class="item-projetos">
-                        <p class="h1">EM BREVE</p>
+                        <p class="h1">VAZIO</p>
                     </div>
                     <div class="item-projetos">
-                        <p class="h1">EM BREVE</p>
+                        <p class="h1">VAZIO</p>
                     </div>
                 </div>
             </section>

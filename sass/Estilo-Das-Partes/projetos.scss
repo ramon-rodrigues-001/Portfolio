@@ -17,6 +17,9 @@
         margin: 10px 0px;
 
         .item-projetos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             flex: 0 1 280px;
             background-color: rgb(255, 255, 255);
             border-radius: 10px;
