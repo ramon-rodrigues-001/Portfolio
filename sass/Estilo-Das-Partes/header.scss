@@ -87,7 +87,7 @@ input[type="checkbox"] {
                 display: none;
 
                 a {
-                    font-size: 1.3em;
+                    font-size: 2em;
                     font-weight: bold;
                     color: rgb(0, 0, 0);
                     text-decoration: none;
@@ -107,14 +107,13 @@ input[type="checkbox"] {
             position: fixed;
             right: 0;
             top: 0;
-            background-color: rgb(245, 245, 245);
+            background-color: rgba(222, 220, 220, 0.876);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border-radius: 0px 0px 0px 80%;
             width: 100vw;
-            height: 60vh;
+            height: 100vh;
             transition: transform 2s, height 2s;
         }
 
@@ -128,7 +127,7 @@ input[type="checkbox"] {
         input[type="checkbox"]:checked ~ label #hamburguer #menu #traco-1 {
             position: absolute;
             top: 5px;
-            transform: rotate(50deg);
+            transform: rotate(45deg);
             transition: .7s;
         }
         input[type="checkbox"]:checked ~ label #hamburguer #menu #traco-2 {
@@ -139,7 +138,7 @@ input[type="checkbox"] {
         input[type="checkbox"]:checked ~ label #hamburguer #menu #traco-3 {
             position: absolute;
             top: 5px;
-            transform: rotate(-50deg);
+            transform: rotate(-45deg);
             transition: .7s;
         }
     }
