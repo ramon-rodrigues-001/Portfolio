@@ -16,3 +16,8 @@ h2 {
 .span-LetraVermelha {
     color: $vermelho;
 }
+
+// Removendo o icone do input checkbox
+input[type="checkbox"] {
+    visibility: hidden;
+}

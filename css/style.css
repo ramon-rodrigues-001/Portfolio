@@ -77,7 +77,7 @@ input[type=checkbox] {
   }
   #header-home #hamburguer #menu {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 10%;
     z-index: 999;
     padding: 5px;
@@ -121,7 +121,7 @@ input[type=checkbox] {
   }
   #header-home input[type=checkbox]:checked ~ label #hamburguer #menu #traco-1 {
     position: absolute;
-    top: 5px;
+    top: 10px;
     transform: rotate(45deg);
     transition: 0.7s;
   }
@@ -132,7 +132,7 @@ input[type=checkbox] {
   }
   #header-home input[type=checkbox]:checked ~ label #hamburguer #menu #traco-3 {
     position: absolute;
-    top: 5px;
+    top: 10px;
     transform: rotate(-45deg);
     transition: 0.7s;
   }
@@ -256,7 +256,22 @@ input[type=checkbox] {
   text-align: center;
   min-height: 190px;
 }
+#projetos #btn-mais-projetos {
+  display: none;
+}
 
+@media screen and (max-width: 920px) {
+  #projetos .contain-projetos div.projeto-descartavel {
+    display: none;
+  }
+  #projetos #btn-mais-projetos {
+    margin: 15px 0px;
+    display: block;
+  }
+  #projetos #mais-projetos:checked ~ .contain-projetos .projeto-descartavel {
+    display: block;
+  }
+}
 footer#contatos {
   display: flex;
   flex-direction: column;
