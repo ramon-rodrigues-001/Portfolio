@@ -69,6 +69,8 @@
             <!-- Habilidades -->
             <section id="habilidades">
                 <h2 class="h1 text-center mb-5"><span class="span-LetraVermelha">Habilid</span>ades</span></h2>
+
+                <input type="checkbox" name="input-habilidades" id="mais-habilidades">
                 <div id="conteiner-cards">
                     <div class="cards" id="c1">
                         <h3 class="title-ability">HTML5</h3>
@@ -86,27 +88,32 @@
                         <h3 class="title-ability">SASS</h3>
                         <p class="h5 px-2">Basico</p>
                     </div>
-                    <div class="cards" id="c5">
+                    <div class="cards habilidade-descartavel" id="c5">
                         <h3 class="title-ability">BOOTSTRAP</h3>
                         <p class="h5 px-2">Basico</p>
                     </div>
-                    <div class="cards" id="c6">
+                    <div class="cards habilidade-descartavel" id="c6">
                         <h3 class="title-ability">PYTHON</h3>
                         <p class="h5 px-2">Basico</p>
                     </div>
 
-                    <div class="cards" id="c6">
+                    <div class="cards habilidade-descartavel" id="c6">
                         <h3 class="title-ability">GIT</h3>
                         <p class="h5 px-2">Iniciante</p>
                     </div>
-                    <div class="cards" id="c6">
+                    <div class="cards habilidade-descartavel" id="c6">
                         <h3 class="title-ability">TYPESCRIPT</h3>
                         <p class="h5 px-2">Iniciante</p>
                     </div>
-                    <div class="cards" id="c6">
+                    <div class="cards habilidade-descartavel" id="c6">
                         <h3 class="title-ability">BULMA</h3>
                         <p class="h5 px-2">Iniciante</p>
                     </div>
+
+                    <!-- Butão ligado ou input checkbox das habilidades -->
+                    <label for="mais-habilidades">
+                        <a class="btn btn-outline-danger" id="btn-mais-habilidades" onclick="mostrar_habilidades()">MOSTRAR MAIS</a>
+                    </label>
                 </div>
                 <div class="container" id="conteiner-resposta-abilidade">
                     <p id="text-resposta">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis accusamus fuga laboriosam magni, dolorum similique veniam repellendus saepe odit eligendi, laborum voluptas, totam non itaque nisi adipisci voluptatem corrupti atque?</p>
@@ -139,7 +146,7 @@
                 </div>
 
                 <label for="mais-projetos" id="label-projetos">
-                    <a class="btn btn-outline-danger" id="btn-mais-projetos"  onclick="mostrar()">MOSTRAR MAIS</a>
+                    <a class="btn btn-outline-danger" id="btn-mais-projetos"  onclick="mostrar_projetos()">MOSTRAR MAIS</a>
                 </label>
                 
             </section>
