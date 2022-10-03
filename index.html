@@ -11,6 +11,10 @@
     <!-- Icones BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+    
+    <!-- BIBLIOTECA DE ANIMAÇÃO DE TEXTO CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Css -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -54,135 +58,142 @@
 
         <main id="main-home">
 
-            <!-- SOBRE MIM -->
+            <!-- SOBRE MIM -->       
             <section  id="sobre-mim">
-                <div id="sm-esquerda">
-                    <img id="img-flutuante" src="imagens/miniComputador.webp" alt="Arte criada por Canaticfr">
-                </div>
-                <div  id="sm-direita">
-                    <h2 class="h1"> <span class="span-LetraVermelha">Sobre</span> Mim</h2>
-                    <p>Ola Meu nome é <span id="span-nome">Ramon_Rodrigues</span>. <br> Sou desenvolvedor web front-end Tenho 18 anos e comecei os estudos na área da programação em 10/05/2021,
-                    <span id="texto-descartavel">dez de então sou Apaixonado por tecnologia em geral e principalmente no ambiente de front-end. Tenho conhecimentos em aplicações web e ferramentas de edição gráfica, domínio em diversas IDE's, talento em percepção criativa.
-                    Conheci a programação pelo canal do curso em video apos isso comprei meu primeiro curso profissionalizante da OneBitCode onde aprendi Sass Bootstrap javascript typescript e muito mais.</span></p>
+                <div data-aos="zoom-in" id="div-animação-header"> <!-- DIV BIBLIOTECA ANIMAÇÃO -->
+                    <div id="sm-esquerda">
+                        <img id="img-flutuante" src="imagens/miniComputador.webp" alt="Arte criada por Canaticfr">
+                    </div>
+                    <div  id="sm-direita">
+                        <h2 class="h1"> <span class="span-LetraVermelha">Sobre</span> Mim</h2>
+                        <p>Ola Meu nome é <span id="span-nome">Ramon_Rodrigues</span>. <br> Sou desenvolvedor web front-end Tenho 18 anos e comecei os estudos na área da programação em 10/05/2021,
+                        <span id="texto-descartavel">dez de então sou Apaixonado por tecnologia em geral e principalmente no ambiente de front-end. Tenho conhecimentos em aplicações web e ferramentas de edição gráfica, domínio em diversas IDE's, talento em percepção criativa.
+                        Conheci a programação pelo canal do curso em video apos isso comprei meu primeiro curso profissionalizante da OneBitCode onde aprendi Sass Bootstrap javascript typescript e muito mais.</span></p>
+                    </div>
                 </div>
             </section>
 
 
-            <!-- Habilidades -->
+            <!-- Habilidades -->    
             <section id="habilidades">
-                <h2 class="h1 text-center mb-5"><span class="span-LetraVermelha">Habilid</span>ades</span></h2>
+                <div data-aos="zoom-in">  <!-- DIV BIBLIOTECA ANIMAÇÃO -->
+                    <h2 class="h1 text-center"><span class="span-LetraVermelha">Habilid</span>ades</span></h2>
+                    <input type="checkbox" name="input-habilidades" id="mais-habilidades">
+                    <div id="conteiner-cards">
+                        <div class="cards" id="c1">
+                            <h3 class="title-ability">HTML5</h3>
+                            <p class="h5 px-2">Avançado</p>
+                        </div>
+                        <div class="cards" id="c2">
+                            <h3 class="title-ability">CSS</h3>
+                            <p class="h5 px-2">Avançado</p>
+                        </div>
+                        <div class="cards" id="c3">
+                            <h3 class="title-ability">JAVASCRIPT</h3>
+                            <p class="h5 px-2">Basico</p>
+                        </div>
+                        <div class="cards" id="c4">
+                            <h3 class="title-ability">SASS</h3>
+                            <p class="h5 px-2">Basico</p>
+                        </div>
+                        <div class="cards habilidade-descartavel" id="c5">
+                            <h3 class="title-ability">BOOTSTRAP</h3>
+                            <p class="h5 px-2">Basico</p>
+                        </div>
+                        <div class="cards habilidade-descartavel" id="c6">
+                            <h3 class="title-ability">PYTHON</h3>
+                            <p class="h5 px-2">Iniciante</p>
+                        </div>
+                        <div class="cards habilidade-descartavel" id="c6">
+                            <h3 class="title-ability">GIT</h3>
+                            <p class="h5 px-2">Iniciante</p>
+                        </div>
+                        <div class="cards habilidade-descartavel" id="c6">
+                            <h3 class="title-ability">TYPESCRIPT</h3>
+                            <p class="h5 px-2">Pretendo</p>
+                        </div>
+                        <div class="cards habilidade-descartavel" id="c6">
+                            <h3 class="title-ability">BULMA</h3>
+                            <p class="h5 px-2">Pretendo</p>
+                        </div>
+                        <!-- Butão ligado ou input checkbox das habilidades -->
+                        <label for="mais-habilidades">
+                            <a class="btn btn-outline-danger" id="btn-mais-habilidades" onclick="mostrar_habilidades()">MOSTRAR MAIS</a>
+                        </label>
+                    </div>
+                    <div class="container" id="conteiner-resposta-abilidade">
+                        <p id="text-resposta">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis accusamus fuga laboriosam magni, dolorum similique veniam repellendus saepe odit eligendi, laborum voluptas, totam non itaque nisi adipisci voluptatem corrupti atque?</p>
+                    </div>
+                </div>
+            </section>
 
-                <input type="checkbox" name="input-habilidades" id="mais-habilidades">
-                <div id="conteiner-cards">
-                    <div class="cards" id="c1">
-                        <h3 class="title-ability">HTML5</h3>
-                        <p class="h5 px-2">Avançado</p>
+            <!-- PROJETOS -->      
+            <section id="projetos">
+                <div data-aos="zoom-in">  <!-- DIV BIBLIOTECA ANIMAÇÃO -->
+                    <h2 class="h1 text-center"><span class="span-LetraVermelha">Proj</span>etos</span></h2>
+                    <input type="checkbox" name="mais-projetos" id="mais-projetos">
+                    <div class="contain-projetos">
+                        <div class="item-projetos">
+                            <p class="h1">VAZIO</p>
+                        </div>
+                        <div class="item-projetos">
+                            <p class="h1">VAZIO</p>
+                        </div>
+                        <div class="item-projetos">
+                            <p class="h1">VAZIO</p>
+                        </div>
+                        <div class="item-projetos projeto-descartavel">
+                            <p class="h1">VAZIO</p>
+                        </div>
+                        <div class="item-projetos projeto-descartavel">
+                            <p class="h1">VAZIO</p>
+                        </div>
+                        <div class="item-projetos projeto-descartavel">
+                            <p class="h1">VAZIO</p>
+                        </div>
                     </div>
-                    <div class="cards" id="c2">
-                        <h3 class="title-ability">CSS</h3>
-                        <p class="h5 px-2">Avançado</p>
-                    </div>
-                    <div class="cards" id="c3">
-                        <h3 class="title-ability">JAVASCRIPT</h3>
-                        <p class="h5 px-2">Basico</p>
-                    </div>
-                    <div class="cards" id="c4">
-                        <h3 class="title-ability">SASS</h3>
-                        <p class="h5 px-2">Basico</p>
-                    </div>
-                    <div class="cards habilidade-descartavel" id="c5">
-                        <h3 class="title-ability">BOOTSTRAP</h3>
-                        <p class="h5 px-2">Basico</p>
-                    </div>
-                    <div class="cards habilidade-descartavel" id="c6">
-                        <h3 class="title-ability">PYTHON</h3>
-                        <p class="h5 px-2">Iniciante</p>
-                    </div>
-
-                    <div class="cards habilidade-descartavel" id="c6">
-                        <h3 class="title-ability">GIT</h3>
-                        <p class="h5 px-2">Iniciante</p>
-                    </div>
-                    <div class="cards habilidade-descartavel" id="c6">
-                        <h3 class="title-ability">TYPESCRIPT</h3>
-                        <p class="h5 px-2">Pretendo</p>
-                    </div>
-                    <div class="cards habilidade-descartavel" id="c6">
-                        <h3 class="title-ability">BULMA</h3>
-                        <p class="h5 px-2">Pretendo</p>
-                    </div>
-
-                    <!-- Butão ligado ou input checkbox das habilidades -->
-                    <label for="mais-habilidades">
-                        <a class="btn btn-outline-danger" id="btn-mais-habilidades" onclick="mostrar_habilidades()">MOSTRAR MAIS</a>
+                    
+                    <label for="mais-projetos" id="label-projetos">
+                        <a class="btn btn-outline-danger" id="btn-mais-projetos"  onclick="mostrar_projetos()">MOSTRAR MAIS</a>
                     </label>
                 </div>
-                <div class="container" id="conteiner-resposta-abilidade">
-                    <p id="text-resposta">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis accusamus fuga laboriosam magni, dolorum similique veniam repellendus saepe odit eligendi, laborum voluptas, totam non itaque nisi adipisci voluptatem corrupti atque?</p>
-                </div>
-            </section>
-
-
-            <section id="projetos">
-                <h2 class="h1 text-center mb-5"><span class="span-LetraVermelha">Proj</span>etos</span></h2>
-                <input type="checkbox" name="mais-projetos" id="mais-projetos">
-                <div class="contain-projetos">
-                    <div class="item-projetos">
-                        <p class="h1">VAZIO</p>
-                    </div>
-                    <div class="item-projetos">
-                        <p class="h1">VAZIO</p>
-                    </div>
-                    <div class="item-projetos">
-                        <p class="h1">VAZIO</p>
-                    </div>
-                    <div class="item-projetos projeto-descartavel">
-                        <p class="h1">VAZIO</p>
-                    </div>
-                    <div class="item-projetos projeto-descartavel">
-                        <p class="h1">VAZIO</p>
-                    </div>
-                    <div class="item-projetos projeto-descartavel">
-                        <p class="h1">VAZIO</p>
-                    </div>
-                </div>
-
-                <label for="mais-projetos" id="label-projetos">
-                    <a class="btn btn-outline-danger" id="btn-mais-projetos"  onclick="mostrar_projetos()">MOSTRAR MAIS</a>
-                </label>
-                
             </section>
         </main>
 
 
-        <!-- FOOTER CONTATOS -->
+        <!-- FOOTER CONTATOS --> 
         <footer id="contatos">
-            <div>
-                <a class="footer-cards btn btn-outline-danger" href="https://www.linkedin.com/in/ramon-rodrigues-515a9b244/" target="_blank">
-                    <p class="h1"><i class="bi bi-linkedin"></i></p>
-                    Linkedin
-                </a>
-                <a class="footer-cards btn btn-outline-danger" href="https://github.com/ramon-rodrigues-001" target="_blank">
-                    <p class="h1"><i class="bi bi-github"></i></p>
-                    Github
-                </a>
-                <a class="footer-cards btn btn-outline-danger" href="https://www.facebook.com/profile.php?id=100084075099565" target="_blank">
-                    <p class="h1"><i class="bi bi-facebook"></i></p>
-                    Facebook
-                </a>
+            <div data-aos="zoom-in" id="animação-texto-contatos"> <!-- DIV BIBLIOTECA ANIMAÇÃO -->
+                <h2 class="h1 text-center"><span class="span-LetraVermelha">Cont</span>atos</span></h2>
+                <div>
+                    <a class="footer-cards btn btn-outline-danger" href="https://www.linkedin.com/in/ramon-rodrigues-515a9b244/" target="_blank">
+                        <p class="h1"><i class="bi bi-linkedin"></i></p>
+                        Linkedin
+                    </a>
+                    <a class="footer-cards btn btn-outline-danger" href="https://github.com/ramon-rodrigues-001" target="_blank">
+                        <p class="h1"><i class="bi bi-github"></i></p>
+                        Github
+                    </a>
+                    <a class="footer-cards btn btn-outline-danger" href="https://www.facebook.com/profile.php?id=100084075099565" target="_blank">
+                        <p class="h1"><i class="bi bi-facebook"></i></p>
+                        Facebook
+                    </a>
+                </div>
+                <p><strong>Email: </strong>ramon.rodrigues.dev@gmail.com</p>
+                <p><strong>Cell: </strong>(33) 97879-2332</p>
+                <p><strong>Endereço: </strong>Capelinha-MG 39680‑000</p>
+                <p>Direitos da imagem utilizada: <a href="https://br.freepik.com/autor/canaticfr" target="_blank">Canaticfr</a></p>
+                <p>V:1.0_01/10/2022</p>
             </div>
-
-            <p><strong>Email: </strong>ramon.rodrigues.dev@gmail.com</p>
-            <p><strong>Cell: </strong>(33) 97879-2332</p>
-            <p><strong>Endereço: </strong>Capelinha-MG 39680‑000</p>
-
-            <p>Direitos da imagem utilizada: <a href="https://br.freepik.com/autor/canaticfr" target="_blank">Canaticfr</a></p>
-            <p>V:1.0_01/10/2022</p>
         </footer>
     </div>
 
 
-    
+    <!-- BIBLIOTECA DE ANIMAÇÃO DE TEXTO JAVASCRIPT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="javascript/script.js"></script>
 </body>
 </html>
