@@ -254,6 +254,8 @@ input[type=checkbox] {
   }
 }
 #projetos {
+  background: url(../imagens/02.jpg) center center no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
