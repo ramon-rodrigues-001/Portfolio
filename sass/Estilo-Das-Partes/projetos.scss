@@ -27,7 +27,22 @@
             border-radius: 10px;
             text-align: center;
             min-height: 190px;
-        }
+
+            
+            p {
+                background-color: rgba(4, 4, 4, 0.27);
+                color: $preto-absoluto;
+                border-radius: 5px;
+                width: 100%;
+            }
+
+            &:hover {
+                p {
+                    letter-spacing: 0.2em;
+                    transition: .4s;
+                }
+            }
+        }    
     }
     
     #btn-mais-projetos {

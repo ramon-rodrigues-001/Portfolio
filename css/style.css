@@ -41,7 +41,7 @@ input[type=checkbox] {
   gap: 40px;
 }
 #header-home #navbar a {
-  font-size: 1em;
+  font-size: 0.9em;
   color: white;
   text-decoration: none;
   transition: 0.4s;
@@ -94,7 +94,7 @@ input[type=checkbox] {
     display: none;
   }
   #header-home #hamburguer #itens a {
-    font-size: 2em;
+    font-size: 1.9em;
     font-weight: bold;
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -201,6 +201,7 @@ input[type=checkbox] {
   flex-direction: column;
   justify-content: center;
   background-color: #0b0b0b;
+  color: rgb(71, 71, 71);
   padding: 10px 0px;
   min-height: 100vh;
 }
@@ -282,6 +283,16 @@ input[type=checkbox] {
   text-align: center;
   min-height: 190px;
 }
+#projetos .contain-projetos .item-projetos p {
+  background-color: rgba(4, 4, 4, 0.27);
+  color: black;
+  border-radius: 5px;
+  width: 100%;
+}
+#projetos .contain-projetos .item-projetos:hover p {
+  letter-spacing: 0.2em;
+  transition: 0.4s;
+}
 #projetos #btn-mais-projetos {
   display: none;
 }
@@ -302,6 +313,7 @@ input[type=checkbox] {
   }
 }
 footer#contatos {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;

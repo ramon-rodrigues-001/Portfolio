@@ -1,4 +1,5 @@
 footer#contatos {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,7 +8,7 @@ footer#contatos {
     background-color: $preto-claro;
     color: $color;
     min-height: 100vh;
-    
+
     #animação-texto-contatos {
         display: flex;
         flex-direction: column;
@@ -20,6 +21,4 @@ footer#contatos {
             margin: 10px;
         }
     }
-
-    
 }
