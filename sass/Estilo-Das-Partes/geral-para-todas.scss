@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
 }
+
+#container-hmf {
+    scroll-behavior: smooth;
+}
+
 #container-hmf {
     background-color: $preto-absoluto;
     font-size: 1.1em;

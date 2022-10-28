@@ -6,6 +6,10 @@
 }
 
 #container-hmf {
+  scroll-behavior: smooth;
+}
+
+#container-hmf {
   background-color: black;
   font-size: 1.1em;
 }
