@@ -18,9 +18,9 @@ let a_habilidades = document.querySelector('a#btn-mais-habilidades')
 
 function mostrar_habilidades() {
     if (input_habilidades.checked == false) {
-        a_habilidades.innerHTML = "MOSTRAR MENOS"
+        a_habilidades.innerText = "MOSTRAR MENOS"
     }
     else if (input_habilidades.checked == true) {
-        a_habilidades.innerHTML = "MOSTRAR MAIS"
+        a_habilidades.innerText = "MOSTRAR MAIS"
     }
 }
