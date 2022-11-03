@@ -1,59 +1,16 @@
 #container {
-    background-color: #212529;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 100vh;
-
     img {
         width: 100%;
         max-width: 550px;
         padding-top: 30px;
-    }
-    
-    div#ladoDireitoDoContainer {
-        color: white;
-        font-size: 1.2em;
-        border-left: solid 1.5px white;
-        padding: 20px;
-
-        #containerBtn {
-            text-align: center;
-
-            #button {
-                width: 48%;
-                font-weight: bold;
-            }
-    
-            #voltar {
-                font-weight: bold;
-                width: 100%;
-                margin: 20px 0px;
-            }
-        }   
     }
 }
 
 
 @media screen and (max-width: 1000px) {
     #container {
-        grid-template-columns: 1fr;
-
         img {
             margin: auto;
         }
-
-        div#ladoDireitoDoContainer {
-            text-align: center;
-            border-left: none;
-        }
     } 
-}
-
-
-@media screen and (max-width: 410px) {
-    #container {
-        #button {
-            height: 60px;
-        }
-    }
 }

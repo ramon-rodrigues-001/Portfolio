@@ -357,11 +357,6 @@ footer#contatos #animação-texto-contatos .footer-cards {
   grid-template-columns: 1fr 1fr;
   min-height: 100vh;
 }
-#container img {
-  width: 100%;
-  max-width: 550px;
-  padding-top: 30px;
-}
 #container div#ladoDireitoDoContainer {
   color: white;
   font-size: 1.2em;
@@ -385,9 +380,6 @@ footer#contatos #animação-texto-contatos .footer-cards {
   #container {
     grid-template-columns: 1fr;
   }
-  #container img {
-    margin: auto;
-  }
   #container div#ladoDireitoDoContainer {
     text-align: center;
     border-left: none;
@@ -396,6 +388,31 @@ footer#contatos #animação-texto-contatos .footer-cards {
 @media screen and (max-width: 410px) {
   #container #button {
     height: 60px;
+  }
+}
+#container img {
+  width: 100%;
+  max-width: 550px;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  #container img {
+    margin: auto;
+  }
+}
+#container .carroselProjeto02 {
+  height: 50vh;
+  width: 47vw;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1000px) {
+  #container .carroselProjeto02 {
+    width: 100vw;
   }
 }
 
