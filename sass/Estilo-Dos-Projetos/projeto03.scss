@@ -1,15 +1,15 @@
 #container {
-    img#imgProjeto01 {
+    img#imgProjeto3 {
         width: 100%;
         max-width: 550px;
-        padding-top: 30px;
+        padding: 10px;
     }
 }
 
 
 @media screen and (max-width: 1000px) {
     #container {
-        img#imgProjeto01 {
+        img#imgProjeto3 {
             margin: auto;
         }
     } 

@@ -390,14 +390,14 @@ footer#contatos #animação-texto-contatos .footer-cards {
     height: 60px;
   }
 }
-#container img {
+#container img#imgProjeto01 {
   width: 100%;
   max-width: 550px;
   padding-top: 30px;
 }
 
 @media screen and (max-width: 1000px) {
-  #container img {
+  #container img#imgProjeto01 {
     margin: auto;
   }
 }
@@ -413,6 +413,17 @@ footer#contatos #animação-texto-contatos .footer-cards {
 @media screen and (max-width: 1000px) {
   #container .carroselProjeto02 {
     width: 100vw;
+  }
+}
+#container img#imgProjeto3 {
+  width: 100%;
+  max-width: 550px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  #container img#imgProjeto3 {
+    margin: auto;
   }
 }
 
