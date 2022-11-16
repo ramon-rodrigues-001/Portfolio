@@ -2,7 +2,9 @@
 // HABILIDADES   
 export const clicarEmCards = function (ev) {
 
-    switch (ev.id) {
+    const elemento = ev.currentTarget
+
+    switch (elemento.id) {
         case 'h1':
             html()
             break

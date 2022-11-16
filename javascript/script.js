@@ -27,9 +27,5 @@ function mostrar_habilidades() {
 
 import { clicarEmCards } from "./text-habilidades.js"
 document.querySelectorAll('.cards').forEach((ev)=>{
-
-    ev.addEventListener('click', (ev)=>{
-        ev.preventDefault()
-        clicarEmCards(ev)
-    })
+    ev.addEventListener('click', clicarEmCards)
 })
