@@ -29,3 +29,22 @@ import { clicarEmCards } from "./text-habilidades.js"
 document.querySelectorAll('.cards').forEach((ev)=>{
     ev.addEventListener('click', clicarEmCards)
 })
+
+
+
+// BARRA DE PROGRESSO
+
+function indicaProgresso() {
+
+    const scroll = document.documentElement.scrollTop
+
+    let altura = document.documentElement.scrollHeight - document.documentElement.clientHeight
+
+    let rolagem = (scroll / altura) * 100
+
+    document.querySelector('#barra-de-scroll').style.width = rolagem + "%"
+}
+
+window.onscroll = function() {
+    indicaProgresso()
+}

@@ -143,6 +143,18 @@ input[type=checkbox] {
     transition: 0.7s;
   }
 }
+#scroll {
+  width: 100vw;
+}
+#scroll #barra-de-scroll {
+  background-color: rgb(165, 44, 44);
+  height: 5px;
+  width: 0%;
+  position: fixed;
+  top: 52px;
+  z-index: 999;
+}
+
 @keyframes img-flutuante {
   0% {
     transform: translateY(25px);
