@@ -24,3 +24,12 @@ function mostrar_habilidades() {
         a_habilidades.innerText = "MOSTRAR MAIS"
     }
 }
+
+import { clicarEmCards } from "./text-habilidades.js"
+document.querySelectorAll('.cards').forEach((ev)=>{
+
+    ev.addEventListener('click', (ev)=>{
+        ev.preventDefault()
+        clicarEmCards(ev)
+    })
+})
