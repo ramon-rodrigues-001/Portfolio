@@ -15,12 +15,13 @@
 
         a {
             font-size: 0.9em;
+            font-weight: 490;
             color: $color;
             text-decoration: none;
             transition: .4s;
 
             &:hover {
-                text-decoration: underline;
+                color: rgb(180, 175, 175);
             }
         }
     }

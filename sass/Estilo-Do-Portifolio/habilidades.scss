@@ -29,6 +29,7 @@
         .cards {
             border: 2px solid $color;
             flex: 0 0 280px;
+            cursor: pointer;
 
             &:hover {
                 border: 2px solid $vermelho;

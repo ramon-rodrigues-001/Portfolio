@@ -46,12 +46,13 @@ input[type=checkbox] {
 }
 #header-home #navbar a {
   font-size: 0.9em;
+  font-weight: 490;
   color: white;
   text-decoration: none;
   transition: 0.4s;
 }
 #header-home #navbar a:hover {
-  text-decoration: underline;
+  color: rgb(180, 175, 175);
 }
 #header-home #hamburguer {
   display: none;
@@ -231,6 +232,7 @@ input[type=checkbox] {
 #habilidades #conteiner-cards .cards {
   border: 2px solid white;
   flex: 0 0 280px;
+  cursor: pointer;
 }
 #habilidades #conteiner-cards .cards:hover {
   border: 2px solid #ff0000;
