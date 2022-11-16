@@ -2,6 +2,9 @@
 // HABILIDADES   
 export const clicarEmCards = function (ev) {
 
+    const h1Inicial = document.querySelector('#titliInicial')
+    document.querySelector('#conteiner-resposta-abilidade').removeChild(h1Inicial)
+
     const elemento = ev.currentTarget
 
     switch (elemento.id) {
@@ -35,8 +38,10 @@ export const clicarEmCards = function (ev) {
     }
 }
 
+const text = document.querySelector('#text-resposta')
+
 function html() {
-    alert('html')
+    criar('HTML', 'Eu estudei por muito tempo html')
 }
 function css() {
     alert('css')
@@ -51,7 +56,7 @@ function bootstrap() {
     alert('bootstrap')
 }
 function python() {
-    alert('python')
+criar('Python', 'AAah Python, a primeira linguagem de programação a qual tive contato passei muito tempo nesta linguagem aprendendo basicamente logica, as vezes volto e dou uma praticadinha, mais não é mais meu foco')
 }
 function git() {
     alert('git')
@@ -61,4 +66,17 @@ function typescript() {
 }
 function bulma() {
     alert('bulma')
+}
+
+
+function criar(title, text) {
+    const containerDeTexto = document.querySelector('#conteiner-resposta-abilidade')
+
+    const h1 = document.createElement('h2')
+    h1.innerText = title
+
+    const p = document. createElement('p')
+    p.innerText = text
+
+    containerDeTexto.append(h1, p)
 }
