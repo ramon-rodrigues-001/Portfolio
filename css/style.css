@@ -147,8 +147,8 @@ input[type=checkbox] {
   width: 100vw;
 }
 #scroll #barra-de-scroll {
-  background-color: rgb(165, 44, 44);
-  height: 5px;
+  background-color: rgb(255, 0, 0);
+  height: 4px;
   width: 0%;
   position: fixed;
   top: 52px;

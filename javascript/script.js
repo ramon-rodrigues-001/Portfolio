@@ -25,6 +25,9 @@ function mostrar_habilidades() {
     }
 }
 
+
+// TEXT OF HABILITY
+
 import { clicarEmCards } from "./text-habilidades.js"
 document.querySelectorAll('.cards').forEach((ev)=>{
     ev.addEventListener('click', clicarEmCards)
@@ -34,16 +37,7 @@ document.querySelectorAll('.cards').forEach((ev)=>{
 
 // BARRA DE PROGRESSO
 
-function indicaProgresso() {
-
-    const scroll = document.documentElement.scrollTop
-
-    let altura = document.documentElement.scrollHeight - document.documentElement.clientHeight
-
-    let rolagem = (scroll / altura) * 100
-
-    document.querySelector('#barra-de-scroll').style.width = rolagem + "%"
-}
+import { indicaProgresso } from "./barra-de-progresso.js"
 
 window.onscroll = function() {
     indicaProgresso()
