@@ -30,7 +30,7 @@ function mostrar_habilidades() {
 
 import { clicarEmCards } from "./text-habilidades.js"
 document.querySelectorAll('.cards').forEach((ev)=>{
-    ev.addEventListener('click', clicarEmCards)
+    ev.addEventListener('click', clicarEmCards) 
 })
 
 
