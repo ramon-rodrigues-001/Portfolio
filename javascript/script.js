@@ -39,5 +39,5 @@ document.querySelectorAll('.cards').forEach((ev)=>{
 import { indicaProgresso } from "./barra-de-progresso.js"
 
 window.onscroll = function() {
-    indicaProgresso()
+    indicaProgresso() 
 }
