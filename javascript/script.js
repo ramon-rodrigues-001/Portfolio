@@ -34,7 +34,6 @@ document.querySelectorAll('.cards').forEach((ev)=>{
 })
 
 
-
 // BARRA DE PROGRESSO
 
 import { indicaProgresso } from "./barra-de-progresso.js"
