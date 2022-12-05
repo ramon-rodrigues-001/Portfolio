@@ -1,8 +1,14 @@
+body.proj {
+    background-color: #212529;
+}
+
 #container {
     background-color: #212529;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: auto;
     min-height: 100vh;
+    max-width: 1200px;
 
     div#ladoDireitoDoContainer {
         color: white;
@@ -31,6 +37,7 @@
 @media screen and (max-width: 1000px) {
     #container {
         grid-template-columns: 1fr;
+        display: block;
 
         div#ladoDireitoDoContainer {
             text-align: center;

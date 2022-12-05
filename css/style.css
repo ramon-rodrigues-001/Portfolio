@@ -365,11 +365,17 @@ footer#contatos #animação-texto-contatos .footer-cards {
   margin: 10px;
 }
 
+body.proj {
+  background-color: #212529;
+}
+
 #container {
   background-color: #212529;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: auto;
   min-height: 100vh;
+  max-width: 1200px;
 }
 #container div#ladoDireitoDoContainer {
   color: white;
@@ -393,6 +399,7 @@ footer#contatos #animação-texto-contatos .footer-cards {
 @media screen and (max-width: 1000px) {
   #container {
     grid-template-columns: 1fr;
+    display: block;
   }
   #container div#ladoDireitoDoContainer {
     text-align: center;
@@ -429,6 +436,11 @@ footer#contatos #animação-texto-contatos .footer-cards {
     width: 100vw;
   }
 }
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #container img#imgProjeto3 {
   width: 100%;
   max-width: 550px;
@@ -436,7 +448,11 @@ footer#contatos #animação-texto-contatos .footer-cards {
 }
 
 @media screen and (max-width: 1000px) {
+  #container {
+    display: block;
+  }
   #container img#imgProjeto3 {
+    display: block;
     margin: auto;
   }
 }
