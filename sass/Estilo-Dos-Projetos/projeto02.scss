@@ -1,18 +1,7 @@
 #container {
     .carroselProjeto02 {
-        height: 50vh;
-        width: 47vw;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
+        width: 90%;
+        margin: auto;
 
-@media screen and (max-width: 1000px) {
-    #container {
-        .carroselProjeto02 {
-            width: 100vw;
-        }
     }
 }

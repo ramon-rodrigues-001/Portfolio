@@ -5,10 +5,20 @@ body.proj {
 #container {
     background-color: #212529;
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     margin: auto;
     min-height: 100vh;
     max-width: 1200px;
+
+
+    img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
 
     div#ladoDireitoDoContainer {
         color: white;

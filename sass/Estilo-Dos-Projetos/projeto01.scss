@@ -1,16 +1,6 @@
 #container {
+    
     img#imgProjeto01 {
-        width: 100%;
-        max-width: 550px;
-        padding-top: 30px;
+        width: 80%;
     }
-}
-
-
-@media screen and (max-width: 1000px) {
-    #container {
-        img#imgProjeto01 {
-            margin: auto;
-        }
-    } 
 }
