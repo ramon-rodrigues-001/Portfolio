@@ -7,15 +7,22 @@
     justify-content: space-around;
     align-items: center;
     z-index: 999;
+    padding: 3px;
     width: 100vw;
+    max-height: 60px;
+
+
+    #logo {
+        font-size: 2em;
+    }
+
 
     #navbar{
         display: flex;
-        gap: 40px;
+        gap: 28px;
 
         a {
-            font-size: 0.9em;
-            font-weight: 490;
+            font: bold 0.9em normal Arial, sans-serif;
             color: $color;
             text-decoration: none;
             transition: .4s;
@@ -33,22 +40,31 @@
 
 
 // ====== deixando o nav mais confortavel ======
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
     #header-home {
-        flex-wrap: wrap;
-        gap: 20px;
-        padding: 10px;
+        justify-content: space-evenly;
+
+        #logo {
+            font-size: 1.7em;
+        }
 
         #navbar {
+            gap: 20;
+
             a {
-                padding-bottom: 5px;
+                font-size: .8em;
             }
         }
 
         #butao-github {
             display: none;
         }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #header-home {
+        padding: 10px;
     }
 }
 

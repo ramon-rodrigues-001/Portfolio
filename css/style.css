@@ -38,15 +38,19 @@ input[type=checkbox] {
   justify-content: space-around;
   align-items: center;
   z-index: 999;
+  padding: 3px;
   width: 100vw;
+  max-height: 60px;
+}
+#header-home #logo {
+  font-size: 2em;
 }
 #header-home #navbar {
   display: flex;
-  gap: 40px;
+  gap: 28px;
 }
 #header-home #navbar a {
-  font-size: 0.9em;
-  font-weight: 490;
+  font: bold 0.9em normal Arial, sans-serif;
   color: white;
   text-decoration: none;
   transition: 0.4s;
@@ -58,17 +62,26 @@ input[type=checkbox] {
   display: none;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
   #header-home {
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 10px;
+    justify-content: space-evenly;
+  }
+  #header-home #logo {
+    font-size: 1.7em;
+  }
+  #header-home #navbar {
+    gap: 20;
   }
   #header-home #navbar a {
-    padding-bottom: 5px;
+    font-size: 0.8em;
   }
   #header-home #butao-github {
     display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  #header-home {
+    padding: 10px;
   }
 }
 @media screen and (max-width: 650px) {
