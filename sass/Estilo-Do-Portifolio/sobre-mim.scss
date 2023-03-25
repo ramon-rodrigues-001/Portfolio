@@ -63,7 +63,9 @@
 
 @media screen and (max-width: 700px) {
     #sobre-mim {
-        text-align: center;
+        #div-animação-header {
+            text-align: left;
+        }
     }
     
     #texto-descartavel {

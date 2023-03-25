@@ -72,7 +72,7 @@
             <!-- SOBRE MIM -->       
             <section  id="sobre-mim">
                 <div data-aos="zoom-in" id="div-animação-header"> <!-- DIV BIBLIOTECA ANIMAÇÃO -->
-                    <div id="sm-esquerda">
+                    <div id="sm-esquerda" class="img-flutuante">
                         <img id="img-flutuante" src="imagens/miniComputador.webp" alt="Arte criada por Canaticfr">
                     </div>
                     <div  id="sm-direita">
@@ -88,45 +88,45 @@
             <!-- Habilidades -->    
             <section id="habilidades">
                 <div data-aos="zoom-in">  <!-- DIV BIBLIOTECA ANIMAÇÃO -->
-                    <h2 class="h1 text-center"><span class="span-LetraVermelha">Habilid</span>ades</span></h2>
+                    <h2 class="h1 text-center" id="inicio"><span class="span-LetraVermelha">Habilid</span>ades</span></h2>
                     <input type="checkbox" name="input-habilidades" id="mais-habilidades">
                     <div id="conteiner-cards">
-                        <div class="cards" id="h1">
+                        <a href="#habilidades" class="cards" id="h1">
                             <h3 class="title-ability">HTML5</h3>
                             <p class="h5 px-2">Avançado</p>
-                        </div>
-                        <div class="cards" id="h2">
+                        </a>
+                        <a href="#habilidades" class="cards impar" id="h2">
                             <h3 class="title-ability">CSS</h3>
                             <p class="h5 px-2">Avançado</p>
-                        </div>
-                        <div class="cards" id="h3">
+                        </a>
+                        <a href="#habilidades" class="cards" id="h3">
                             <h3 class="title-ability">JAVASCRIPT</h3>
                             <p class="h5 px-2">Basico</p>
-                        </div>
-                        <div class="cards" id="h4">
+                        </a>
+                        <a href="#habilidades" class="cards" id="h4">
                             <h3 class="title-ability">SASS</h3>
                             <p class="h5 px-2">Basico</p>
-                        </div>
-                        <div class="cards habilidade-descartavel" id="h5">
+                        </a>
+                        <a href="#habilidades" class="cards habilidade-descartavel impar" id="h5">
                             <h3 class="title-ability">BOOTSTRAP</h3>
                             <p class="h5 px-2">Basico</p>
-                        </div>
-                        <div class="cards habilidade-descartavel" id="h6">
+                        </a>
+                        <a href="#habilidades" class="cards habilidade-descartavel" id="h6">
                             <h3 class="title-ability">PYTHON</h3>
                             <p class="h5 px-2">Iniciante</p>
-                        </div>
-                        <div class="cards habilidade-descartavel" id="h7">
+                        </a>
+                        <a href="#habilidades" class="cards habilidade-descartavel" id="h7">
                             <h3 class="title-ability">GIT</h3>
                             <p class="h5 px-2">Iniciante</p>
-                        </div>
-                        <div class="cards habilidade-descartavel" id="h8">
+                        </a>
+                        <a href="#habilidades" class="cards habilidade-descartavel impar" id="h8">
                             <h3 class="title-ability">TYPESCRIPT</h3>
                             <p class="h5 px-2">Pretendo Em Breve</p>
-                        </div>
-                        <div class="cards habilidade-descartavel" id="h9">
+                        </a>
+                        <a href="#habilidades" class="cards habilidade-descartavel" id="h9">
                             <h3 class="title-ability">BULMA</h3>
                             <p class="h5 px-2">Pretendo Em Breve</p>
-                        </div>
+                        </a>
                         <!-- Butão ligado ou input checkbox das habilidades -->
                         <label for="mais-habilidades">
                             <a class="btn btn-outline-danger" id="btn-mais-habilidades" onclick="mostrar_habilidades()">MOSTRAR MAIS</a>
@@ -210,12 +210,34 @@
         </footer>
     </div>
 
-
     <!-- BIBLIOTECA DE ANIMAÇÃO DE TEXTO JAVASCRIPT -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
+    <!-- JavaScript Animação com VANILLAS -->
+    <script src="javascript/Vanilla/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".item-projetos"), {
+		    max: 25,
+		    speed: 400,
+            glare: true,
+            "max-glare": 1,
+	    });
+        VanillaTilt.init(document.querySelectorAll(".cards"), {
+		    max: 25,
+		    speed: 400,
+            glare: true
+	    });
+        VanillaTilt.init(document.querySelectorAll(".img-flutuante"), {
+		    max: 50,
+		    speed: 400,
+	    });
+    </script>
+
+
+    <!-- JavaScript Puro -->
     <script src="javascript/script.js" type="module"></script>
 </body>
 </html>

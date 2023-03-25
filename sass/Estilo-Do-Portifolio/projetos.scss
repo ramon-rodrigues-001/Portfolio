@@ -27,25 +27,32 @@
             border: solid 2px red;
             color: rgb(255, 255, 255);
             border-radius: 10px;
+            box-shadow: 3px 3px 10px black;
             text-align: center;
             min-height: 190px;
             text-decoration: none;
             overflow: hidden;
             
             p {
+                position: relative;
                 background-color: rgba(4, 4, 4, 0.27);
                 border-radius: 5px;
                 width: 100%;
             }
 
+            h3 {
+                backdrop-filter: blur(10px);
+                z-index: 999;
+                width: 100%;
+            }
+
             img {
-                height: 145px;
+                position: absolute;
+                height: 100%;
                 width: 101%;
             }
 
             &:hover {
-                transform: translateY(-8px);
-
                 p {
                     letter-spacing: 0.2em;
                     transition: .4s;

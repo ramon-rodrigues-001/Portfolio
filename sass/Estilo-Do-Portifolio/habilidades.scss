@@ -27,9 +27,17 @@
         padding: 0px 20px;
 
         .cards {
+            color: rgb(81, 81, 81);
+            text-decoration: none;
             border: 2px solid $color;
+            border-radius: 7px;
             flex: 0 0 280px;
             cursor: pointer;
+            
+            &.impar {
+                position: relative;
+                transform: translateY(-15px);
+            }
 
             &:hover {
                 border: 2px solid $vermelho;
@@ -69,6 +77,15 @@
 
         #mais-habilidades:checked ~ #conteiner-cards .habilidade-descartavel {
             display: block;
+        }
+
+        #conteiner-cards {
+            .cards {
+                &.impar {
+                    position: relative;
+                    transform: translateY(0px);
+                }
+            }
         }
     }
 }

@@ -44,13 +44,14 @@ input[type=checkbox] {
 }
 #header-home #logo {
   font-size: 2em;
+  text-shadow: 4px 4px 3px black;
 }
 #header-home #navbar {
   display: flex;
   gap: 28px;
 }
 #header-home #navbar a {
-  font: bold 0.9em normal Arial, sans-serif;
+  font: bold 0.8em normal Arial, sans-serif;
   color: white;
   text-decoration: none;
   transition: 0.4s;
@@ -60,6 +61,12 @@ input[type=checkbox] {
 }
 #header-home #hamburguer {
   display: none;
+}
+#header-home #butao-github {
+  font-size: 0.9em;
+  font-weight: bold;
+  border-width: 2px;
+  box-shadow: 5px 5px 5px black;
 }
 
 @media screen and (max-width: 900px) {
@@ -161,7 +168,7 @@ input[type=checkbox] {
 }
 #scroll #barra-de-scroll {
   background-color: rgb(255, 0, 0);
-  height: 4px;
+  height: 3px;
   width: 0%;
   position: fixed;
   top: 52px;
@@ -222,8 +229,8 @@ input[type=checkbox] {
 }
 
 @media screen and (max-width: 700px) {
-  #sobre-mim {
-    text-align: center;
+  #sobre-mim #div-animação-header {
+    text-align: left;
   }
   #texto-descartavel {
     display: none;
@@ -255,9 +262,16 @@ input[type=checkbox] {
   padding: 0px 20px;
 }
 #habilidades #conteiner-cards .cards {
+  color: rgb(81, 81, 81);
+  text-decoration: none;
   border: 2px solid white;
+  border-radius: 7px;
   flex: 0 0 280px;
   cursor: pointer;
+}
+#habilidades #conteiner-cards .cards.impar {
+  position: relative;
+  transform: translateY(-15px);
 }
 #habilidades #conteiner-cards .cards:hover {
   border: 2px solid #ff0000;
@@ -286,6 +300,10 @@ input[type=checkbox] {
   }
   #habilidades #mais-habilidades:checked ~ #conteiner-cards .habilidade-descartavel {
     display: block;
+  }
+  #habilidades #conteiner-cards .cards.impar {
+    position: relative;
+    transform: translateY(0px);
   }
 }
 #projetos {
@@ -316,22 +334,27 @@ input[type=checkbox] {
   border: solid 2px red;
   color: rgb(255, 255, 255);
   border-radius: 10px;
+  box-shadow: 3px 3px 10px black;
   text-align: center;
   min-height: 190px;
   text-decoration: none;
   overflow: hidden;
 }
 #projetos .contain-projetos .item-projetos p {
+  position: relative;
   background-color: rgba(4, 4, 4, 0.27);
   border-radius: 5px;
   width: 100%;
 }
-#projetos .contain-projetos .item-projetos img {
-  height: 145px;
-  width: 101%;
+#projetos .contain-projetos .item-projetos h3 {
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  width: 100%;
 }
-#projetos .contain-projetos .item-projetos:hover {
-  transform: translateY(-8px);
+#projetos .contain-projetos .item-projetos img {
+  position: absolute;
+  height: 100%;
+  width: 101%;
 }
 #projetos .contain-projetos .item-projetos:hover p {
   letter-spacing: 0.2em;

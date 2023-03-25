@@ -14,6 +14,7 @@
 
     #logo {
         font-size: 2em;
+        text-shadow: 4px 4px 3px black;
     }
 
 
@@ -22,7 +23,7 @@
         gap: 28px;
 
         a {
-            font: bold 0.9em normal Arial, sans-serif;
+            font: bold 0.8em normal Arial, sans-serif;
             color: $color;
             text-decoration: none;
             transition: .4s;
@@ -35,6 +36,13 @@
 
     #hamburguer {
         display: none;
+    }
+
+    #butao-github {
+        font-size: .9em;
+        font-weight: bold;
+        border-width: 2px;
+        box-shadow: 5px 5px 5px black;
     }
 }
 
@@ -165,7 +173,7 @@
 
     #barra-de-scroll {
         background-color: rgb(255, 0, 0);
-        height: 4px;
+        height: 3px;
         width: 0%;
         position: fixed;
         top: 52px;
