@@ -64,11 +64,14 @@
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
     #sobre-mim {
-        #sm-direita {
-            padding: 10px 30px 10px 30px;
+        #div-animação-header {
+            justify-content: center;
         }
+        #sm-direita {
+            padding: 10px 30px 20px 30px;
+        }  
     }
 }
 
