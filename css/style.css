@@ -220,9 +220,7 @@ input[type=checkbox] {
 }
 #sobre-mim #sm-direita {
   flex: 0 1 600px;
-}
-#sobre-mim #sm-direita #span-nome {
-  font-size: 1.5em;
+  padding-bottom: 20px;
 }
 #sobre-mim #sm-direita #texto {
   font-family: "Ubuntu", sans-serif;
@@ -331,7 +329,7 @@ input[type=checkbox] {
   align-items: center;
   justify-content: center;
   flex: 0 1 280px;
-  border: solid 2px red;
+  border: solid 2px rgb(255, 255, 255);
   color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 3px 3px 10px black;
@@ -355,6 +353,9 @@ input[type=checkbox] {
   position: absolute;
   height: 100%;
   width: 101%;
+}
+#projetos .contain-projetos .item-projetos:hover {
+  border: solid 2px rgb(255, 0, 0);
 }
 #projetos .contain-projetos .item-projetos:hover p {
   letter-spacing: 0.2em;

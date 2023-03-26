@@ -24,7 +24,7 @@
             align-items: center;
             justify-content: center;
             flex: 0 1 280px;
-            border: solid 2px red;
+            border: solid 2px rgb(255, 255, 255);
             color: rgb(255, 255, 255);
             border-radius: 10px;
             box-shadow: 3px 3px 10px black;
@@ -53,6 +53,8 @@
             }
 
             &:hover {
+                border: solid 2px rgb(255, 0, 0);
+
                 p {
                     letter-spacing: 0.2em;
                     transition: .4s;
