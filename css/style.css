@@ -232,15 +232,8 @@ input[type=checkbox] {
 }
 
 @media screen and (max-width: 900px) {
-  #sobre-mim #div-animação-header #btn-mais-sobreMim {
-    display: none;
-  }
   #sobre-mim #sm-direita {
-    flex: 0 1 700px;
     padding: 10px 30px 10px 30px;
-  }
-  #sobre-mim #sm-direita #texto {
-    font-family: "Ubuntu", sans-serif;
   }
 }
 @media screen and (max-width: 700px) {
@@ -253,16 +246,22 @@ input[type=checkbox] {
   #sobre-mim #div-animação-header #label-mais-sobreMim #btn-mais-sobreMim {
     margin: 15px 0px;
     display: block;
-    width: 93vw;
+    width: 92vw;
     padding: 10px -30px 10px 0px;
+  }
+  #sobre-mim #mais-sobreMim:checked ~ #sm-direita #texto-descartavel-2 {
+    display: inline;
   }
   #sobre-mim #texto-descartavel-2 {
     display: none;
   }
 }
 @media screen and (max-width: 457px) {
-  #texto-descartavel-1 {
+  #sobre-mim #texto-descartavel-1 {
     display: none;
+  }
+  #sobre-mim #mais-sobreMim:checked ~ #sm-direita #texto-descartavel-1 {
+    display: inline;
   }
 }
 #habilidades {

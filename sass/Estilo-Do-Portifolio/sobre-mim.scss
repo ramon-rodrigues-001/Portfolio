@@ -66,21 +66,8 @@
 
 @media screen and (max-width: 900px) {
     #sobre-mim {
-    
-        #div-animação-header {
-    
-            #btn-mais-sobreMim {
-                display: none;
-            }
-        }
-    
         #sm-direita {
-            flex: 0 1 700px;
             padding: 10px 30px 10px 30px;
-            
-            #texto { 
-                font-family: 'Ubuntu', sans-serif;
-            }
         }
     }
 }
@@ -97,12 +84,18 @@
                 #btn-mais-sobreMim {
                     margin: 15px 0px;
                     display: block;
-                    width: 93vw;
+                    width: 92vw;
                     
                     padding: 10px -30px 10px 0px;
                 }
             }
         }
+
+
+        #mais-sobreMim:checked ~ #sm-direita #texto-descartavel-2 {
+            display: inline;
+        }
+
         
         #texto-descartavel-2 {
             display: none;
@@ -111,7 +104,13 @@
 }
 
 @media screen and (max-width: 457px) {
-    #texto-descartavel-1 {
-        display: none;
+    #sobre-mim {
+        #texto-descartavel-1 {
+            display: none;
+        }
+
+        #mais-sobreMim:checked ~ #sm-direita #texto-descartavel-1 {
+            display: inline;
+        }
     }
 }

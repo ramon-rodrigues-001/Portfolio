@@ -75,6 +75,7 @@
                     <div id="sm-esquerda" class="img-flutuante">
                         <img id="img-flutuante" src="imagens/Preferida.jpg" alt="Arte criada por Canaticfr">
                     </div>
+                    <input type="checkbox" name="mais-sobreMim" id="mais-sobreMim">
                     <div  id="sm-direita">
                         <h2 class="h1"> <span class="span-LetraVermelha">Sobre</span> Mim</h2>
                         <p id="texto">Oi eu sou o Ramon, um desenvolvedor web front-end de 18 anos que começou a estudar programação em 10/01/2022. 
@@ -85,8 +86,8 @@
                             </span>
                         </span></p>
                     </div>
-                    <label for="btn-mais-sobreMim" id="label-mais-sobreMim">
-                        <a class="btn btn-outline-danger" id="btn-mais-sobreMim" onclick="mostrar_habilidades()">MOSTRAR MAIS</a>
+                    <label for="mais-sobreMim" id="label-mais-sobreMim">
+                        <a class="btn btn-outline-danger" id="btn-mais-sobreMim" onclick="mostrar_maisSobreMim()">MOSTRAR MAIS</a>
                     </label>
                 </div>
             </section>
@@ -136,7 +137,7 @@
                         </a>
                         <!-- Butão ligado ou input checkbox das habilidades -->
                         <label for="mais-habilidades">
-                            <a class="btn btn-outline-danger" id="btn-mais-habilidades" onclick="mostrar_habilidades()">MOSTRAR MAIS</a>
+                            <a class="btn btn-outline-danger" id="btn-mais-habilidades">MOSTRAR MAIS</a>
                         </label>
                     </div>
                     <div class="container" id="conteiner-resposta-abilidade">
