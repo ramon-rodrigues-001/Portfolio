@@ -44,7 +44,7 @@ input[type=checkbox] {
 }
 #header-home #logo {
   font-size: 2em;
-  text-shadow: 4px 4px 3px black;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.656);
 }
 #header-home #navbar {
   display: flex;
@@ -66,7 +66,7 @@ input[type=checkbox] {
   font-size: 0.9em;
   font-weight: bold;
   border-width: 2px;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 3px 3px 3px black;
 }
 
 @media screen and (max-width: 900px) {
@@ -193,9 +193,9 @@ input[type=checkbox] {
   font-weight: bold;
   background-color: black;
   color: white;
-  padding: 70px 50px 0px 50px;
   max-width: 100vw;
   min-height: 100vh;
+  padding-top: 70px;
 }
 #sobre-mim #div-animação-header {
   display: flex;
@@ -204,8 +204,12 @@ input[type=checkbox] {
   text-align: justify;
   flex-wrap: wrap;
 }
+#sobre-mim #div-animação-header #btn-mais-sobreMim {
+  display: none;
+}
 #sobre-mim #sm-esquerda {
   text-align: center;
+  padding: 30px 20px;
 }
 #sobre-mim #sm-esquerda #img-flutuante {
   animation-name: img-flutuante;
@@ -213,24 +217,51 @@ input[type=checkbox] {
   animation-iteration-count: infinite;
   padding: 25px;
   border: 1.5px solid transparent;
-  border-radius: 10%;
+  border-radius: 30%;
+  max-width: 300px;
 }
 #sobre-mim #sm-esquerda #img-flutuante:hover {
   border: 1.5px solid #ff0000;
 }
 #sobre-mim #sm-direita {
-  flex: 0 1 600px;
-  padding-bottom: 20px;
+  flex: 0 1 700px;
+  padding: 10px 10px 10px 10px;
 }
 #sobre-mim #sm-direita #texto {
   font-family: "Ubuntu", sans-serif;
 }
 
+@media screen and (max-width: 900px) {
+  #sobre-mim #div-animação-header #btn-mais-sobreMim {
+    display: none;
+  }
+  #sobre-mim #sm-direita {
+    flex: 0 1 700px;
+    padding: 10px 30px 10px 30px;
+  }
+  #sobre-mim #sm-direita #texto {
+    font-family: "Ubuntu", sans-serif;
+  }
+}
 @media screen and (max-width: 700px) {
   #sobre-mim #div-animação-header {
     text-align: left;
   }
-  #texto-descartavel {
+  #sobre-mim #div-animação-header #label-mais-sobreMim {
+    display: block;
+  }
+  #sobre-mim #div-animação-header #label-mais-sobreMim #btn-mais-sobreMim {
+    margin: 15px 0px;
+    display: block;
+    width: 93vw;
+    padding: 10px -30px 10px 0px;
+  }
+  #sobre-mim #texto-descartavel-2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 457px) {
+  #texto-descartavel-1 {
     display: none;
   }
 }

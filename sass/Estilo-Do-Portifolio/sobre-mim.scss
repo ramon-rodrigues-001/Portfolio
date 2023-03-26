@@ -17,10 +17,9 @@
     font-weight: bold;
     background-color: $preto-absoluto;
     color: $color;
-    padding: 70px 50px 0px 50px;
     max-width: 100vw;
     min-height: 100vh;
-
+    padding-top: 70px;
 
     #div-animação-header {
         display: flex;
@@ -28,10 +27,15 @@
         align-items: center;
         text-align: justify;
         flex-wrap: wrap;
+
+        #btn-mais-sobreMim {
+            display: none;
+        }
     }
 
     #sm-esquerda {
         text-align: center;
+        padding: 30px 20px;
 
         #img-flutuante {
             animation-name: img-flutuante;
@@ -39,7 +43,8 @@
             animation-iteration-count: infinite;
             padding: 25px;
             border: 1.5px solid transparent;
-            border-radius: 10%;
+            border-radius: 30%;
+            max-width: 300px;
 
             &:hover {
                 border: 1.5px solid $vermelho;
@@ -49,8 +54,8 @@
     
 
     #sm-direita {
-        flex: 0 1 600px;
-        padding-bottom: 20px;
+        flex: 0 1 700px;
+        padding: 10px 10px 10px 10px;
         
         #texto { 
             font-family: 'Ubuntu', sans-serif;
@@ -58,14 +63,55 @@
     }
 }
 
+
+@media screen and (max-width: 900px) {
+    #sobre-mim {
+    
+        #div-animação-header {
+    
+            #btn-mais-sobreMim {
+                display: none;
+            }
+        }
+    
+        #sm-direita {
+            flex: 0 1 700px;
+            padding: 10px 30px 10px 30px;
+            
+            #texto { 
+                font-family: 'Ubuntu', sans-serif;
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 700px) {
     #sobre-mim {
         #div-animação-header {
             text-align: left;
+
+            #label-mais-sobreMim {
+                display: block;
+
+                #btn-mais-sobreMim {
+                    margin: 15px 0px;
+                    display: block;
+                    width: 93vw;
+                    
+                    padding: 10px -30px 10px 0px;
+                }
+            }
+        }
+        
+        #texto-descartavel-2 {
+            display: none;
         }
     }
-    
-    #texto-descartavel {
+}
+
+@media screen and (max-width: 457px) {
+    #texto-descartavel-1 {
         display: none;
     }
 }
