@@ -63,10 +63,9 @@ input[type=checkbox] {
   display: none;
 }
 #header-home .container-fluid {
-  padding: 0;
-}
-#header-home .container-fluid #offcanvasNavbar {
+  position: relative;
   z-index: 15;
+  padding: 0;
 }
 #header-home .container-fluid #offcanvasNavbar .offcanvas-body .itens_menu {
   display: block;

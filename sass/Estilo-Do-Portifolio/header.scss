@@ -39,10 +39,11 @@
     }
 
     .container-fluid {
+        position: relative;
+        z-index: 15;
         padding: 0;
 
         #offcanvasNavbar {
-            z-index: 15;
 
             .offcanvas-body {
                 .itens_menu {
