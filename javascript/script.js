@@ -64,3 +64,17 @@ import { indicaProgresso } from "./barra-de-progresso.js"
 window.onscroll = function() {
     indicaProgresso() 
 }
+
+
+// Abre e fecha menu trocando o valor de aria-label do btn menu 
+
+const corpo = document.querySelector('#container-hmf')
+const checkMenu = document.querySelector('#check-menu')
+corpo.addEventListener('click', ()=> {
+    if (checkMenu.checked) {
+        const canvas = document.querySelector('#offcanvasNavbar')
+        if (canvas.style.display == 'block') {
+            checkMenu.checked = false
+        }
+    }
+})

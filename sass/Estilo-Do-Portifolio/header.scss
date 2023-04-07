@@ -38,6 +38,17 @@
         display: none;
     }
 
+    .container-fluid {
+        padding: 0;
+
+        #offcanvasNavbar {
+
+            .offcanvas-body {
+                opacity: 2;
+            }
+        }
+    }
+
     #butao-github {
         font-size: .9em;
         font-weight: bold;
@@ -94,7 +105,7 @@
                 position: absolute;
                 top: 10px;
                 right: 10%;
-                z-index: 999;
+                z-index: 9999;
                 padding: 5px;
                 .tracos {
                     background-color: red;
@@ -102,21 +113,6 @@
                     transition: .1s;
                     width: 40px;
                     height: 5px;
-                }
-            }
-            #itens {
-                display: none;
-
-                a {
-                    font-size: 1.9em;
-                    font-weight: bold;
-                    color: rgb(0, 0, 0);
-                    text-decoration: none;
-                    margin: 10px;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
                 }
             }
         }

@@ -62,6 +62,12 @@ input[type=checkbox] {
 #header-home #hamburguer {
   display: none;
 }
+#header-home .container-fluid {
+  padding: 0;
+}
+#header-home .container-fluid #offcanvasNavbar .offcanvas-body {
+  opacity: 2;
+}
 #header-home #butao-github {
   font-size: 0.9em;
   font-weight: bold;
@@ -105,7 +111,7 @@ input[type=checkbox] {
     position: absolute;
     top: 10px;
     right: 10%;
-    z-index: 999;
+    z-index: 9999;
     padding: 5px;
   }
   #header-home #hamburguer #menu .tracos {
@@ -114,19 +120,6 @@ input[type=checkbox] {
     transition: 0.1s;
     width: 40px;
     height: 5px;
-  }
-  #header-home #hamburguer #itens {
-    display: none;
-  }
-  #header-home #hamburguer #itens a {
-    font-size: 1.9em;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    margin: 10px;
-  }
-  #header-home #hamburguer #itens a:hover {
-    text-decoration: underline;
   }
   #header-home input[type=checkbox]:checked ~ label #hamburguer #itens {
     position: fixed;
