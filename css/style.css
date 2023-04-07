@@ -37,7 +37,7 @@ input[type=checkbox] {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  z-index: 999;
+  z-index: 10;
   padding: 3px;
   width: 100vw;
   max-height: 60px;
@@ -65,8 +65,14 @@ input[type=checkbox] {
 #header-home .container-fluid {
   padding: 0;
 }
-#header-home .container-fluid #offcanvasNavbar .offcanvas-body {
-  opacity: 2;
+#header-home .container-fluid #offcanvasNavbar {
+  z-index: 15;
+}
+#header-home .container-fluid #offcanvasNavbar .offcanvas-body .itens_menu {
+  display: block;
+  font-size: 1.1em;
+  margin: 10px 0px;
+  text-align: center;
 }
 #header-home #butao-github {
   font-size: 0.9em;
@@ -138,18 +144,18 @@ input[type=checkbox] {
     position: absolute;
     top: 10px;
   }
-  #header-home input[type=checkbox]:checked ~ label #hamburguer #menu #traco-1 {
+  #header-home input[type=checkbox]:checked ~ #hamburguer label #menu #traco-1 {
     position: absolute;
     top: 10px;
     transform: rotate(45deg);
     transition: 0.7s;
   }
-  #header-home input[type=checkbox]:checked ~ label #hamburguer #menu #traco-2 {
+  #header-home input[type=checkbox]:checked ~ #hamburguer label #menu #traco-2 {
     transform: translateX(-100px);
     visibility: hidden;
     transition: 0.1s;
   }
-  #header-home input[type=checkbox]:checked ~ label #hamburguer #menu #traco-3 {
+  #header-home input[type=checkbox]:checked ~ #hamburguer label #menu #traco-3 {
     position: absolute;
     top: 10px;
     transform: rotate(-45deg);
@@ -165,7 +171,7 @@ input[type=checkbox] {
   width: 0%;
   position: fixed;
   top: 52px;
-  z-index: 999;
+  z-index: 11;
 }
 
 @keyframes img-flutuante {
