@@ -106,10 +106,14 @@
 @media screen and (max-width: 650px) {
     #header-home {
         justify-content: left;
+
+        #logo {
+            padding-left: 20px;
+        }
+
         #navbar {
             display: none;
         }
-
         
         #hamburguer {
             display: inline-block;

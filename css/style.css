@@ -113,6 +113,9 @@ input[type=checkbox] {
   #header-home {
     justify-content: left;
   }
+  #header-home #logo {
+    padding-left: 20px;
+  }
   #header-home #navbar {
     display: none;
   }
