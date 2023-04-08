@@ -40,14 +40,20 @@
 
     .container-fluid {
         position: relative;
-        z-index: 15;
+        z-index: 999;
         padding: 0;
 
         #offcanvasNavbar {
+            background-color: transparent;
+            color: white;
+            width: 100vw;
+            backdrop-filter: blur(8px);
 
             .offcanvas-body {
+                
                 .itens_menu {
                     display: block;
+                    border-width: 2px;
                     font-size: 1.1em;
                     margin: 10px 0px;
                     text-align: center;
