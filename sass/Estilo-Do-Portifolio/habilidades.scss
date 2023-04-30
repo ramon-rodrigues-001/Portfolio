@@ -13,7 +13,7 @@
     }
     
     .title-ability {
-        color: $vermelho;
+        color: $info;
         text-align: center;
     }
 
@@ -25,6 +25,17 @@
         align-content: center;
         gap: 20px;
         padding: 0px 20px;
+
+        
+        .iconHabilits {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 35px;
+            border-radius: 10% 10% 10% 50%;
+            filter: grayscale(100%);
+            transition: .5s;
+        }
 
         .cards {
             color: rgb(81, 81, 81);
@@ -40,8 +51,14 @@
             }
 
             &:hover {
-                border: 2px solid $vermelho;
-                box-shadow: 1px 1px 10px 5px rgba(255, 0, 0, 0.128);
+                border: 2px solid $info;
+                box-shadow: 0px 1px 2px 1px $info;
+                transition: .7s ease;
+
+                .iconHabilits {
+                    transition: .5s;
+                    filter: grayscale(0);
+                }
             }
         }
     }

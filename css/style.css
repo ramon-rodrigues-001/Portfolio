@@ -16,18 +16,82 @@
 
 .h1 {
   font-size: 2em;
+  color: white;
 }
 
 h2 {
   color: white;
+  margin-bottom: 20px;
 }
 
-.span-LetraVermelha {
-  color: #ff0000;
+.span-azulMarinho {
+  color: #31D2F2;
+  text-shadow: 0px 0px 10px #31D2F2;
 }
 
 input[type=checkbox] {
   visibility: hidden;
+}
+
+.btnPersonalizado {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  font-weight: bold;
+  border: 3px solid aqua;
+  text-decoration: none;
+  padding: 10px 30px;
+  z-index: 999;
+  transition: 0.7s ease;
+}
+.btnPersonalizado::before {
+  background-color: rgb(255, 255, 255);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 110%;
+  height: 0;
+  z-index: -1;
+  transition: 0.7s ease;
+}
+.btnPersonalizado .detalhes-btn {
+  background-color: rgb(0, 172, 172);
+  position: absolute;
+  width: 30px;
+  height: 6px;
+  border-radius: 0px 0px 50% 50%;
+  transition: 0.7s ease;
+}
+.btnPersonalizado .detalhes-btn.quadrado_1 {
+  top: -1px;
+  left: 10px;
+  border-radius: 0px 0px 50% 50%;
+}
+.btnPersonalizado .detalhes-btn.quadrado_2 {
+  bottom: -1px;
+  right: 10px;
+  border-radius: 50% 50% 0px 0px;
+}
+.btnPersonalizado:hover {
+  border-color: white;
+  color: black;
+}
+.btnPersonalizado:hover .detalhes-btn {
+  background-color: black;
+}
+.btnPersonalizado:hover .detalhes-btn.quadrado_1 {
+  left: 70%;
+}
+.btnPersonalizado:hover .detalhes-btn.quadrado_2 {
+  right: 70%;
+}
+.btnPersonalizado:hover::before {
+  background-color: aqua;
+  height: 450%;
 }
 
 #header-home {
@@ -57,7 +121,7 @@ input[type=checkbox] {
   transition: 0.4s;
 }
 #header-home #navbar a:hover {
-  color: rgb(180, 175, 175);
+  color: #31D2F2;
 }
 #header-home #hamburguer {
   display: none;
@@ -130,7 +194,7 @@ input[type=checkbox] {
     padding: 5px;
   }
   #header-home #hamburguer #menu .tracos {
-    background-color: red;
+    background-color: #31D2F2;
     margin: 5px 0px;
     transition: 0.1s;
     width: 40px;
@@ -175,7 +239,8 @@ input[type=checkbox] {
   width: 100vw;
 }
 #scroll #barra-de-scroll {
-  background-color: rgb(255, 0, 0);
+  background-color: #31D2F2;
+  box-shadow: 0px 0px 30px 0px #31D2F2;
   height: 3px;
   width: 0%;
   position: fixed;
@@ -200,7 +265,7 @@ input[type=checkbox] {
   font-size: 1.15em;
   font-weight: bold;
   background-color: black;
-  color: white;
+  color: aqua;
   max-width: 100vw;
   min-height: 100vh;
   padding-top: 70px;
@@ -225,7 +290,7 @@ input[type=checkbox] {
   animation-iteration-count: infinite;
   padding: 25px;
   border: 1.5px solid transparent;
-  border-radius: 30%;
+  border-radius: 45% 30%;
   max-width: 300px;
 }
 #sobre-mim #sm-esquerda #img-flutuante:hover {
@@ -236,7 +301,14 @@ input[type=checkbox] {
   padding: 10px 10px 10px 10px;
 }
 #sobre-mim #sm-direita #texto {
+  display: inline;
   font-family: "Ubuntu", sans-serif;
+}
+#sobre-mim #sm-direita .icone_aspas {
+  width: 15px;
+}
+#sobre-mim #sm-direita .icone_aspas#aspa-2 {
+  transform: rotate(150deg);
 }
 
 @media screen and (max-width: 1100px) {
@@ -288,7 +360,7 @@ input[type=checkbox] {
   color: white;
 }
 #habilidades .title-ability {
-  color: #ff0000;
+  color: #31D2F2;
   text-align: center;
 }
 #habilidades #conteiner-cards {
@@ -299,6 +371,15 @@ input[type=checkbox] {
   align-content: center;
   gap: 20px;
   padding: 0px 20px;
+}
+#habilidades #conteiner-cards .iconHabilits {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  border-radius: 10% 10% 10% 50%;
+  filter: grayscale(100%);
+  transition: 0.5s;
 }
 #habilidades #conteiner-cards .cards {
   color: rgb(81, 81, 81);
@@ -313,8 +394,13 @@ input[type=checkbox] {
   transform: translateY(-15px);
 }
 #habilidades #conteiner-cards .cards:hover {
-  border: 2px solid #ff0000;
-  box-shadow: 1px 1px 10px 5px rgba(255, 0, 0, 0.128);
+  border: 2px solid #31D2F2;
+  box-shadow: 0px 1px 2px 1px #31D2F2;
+  transition: 0.7s ease;
+}
+#habilidades #conteiner-cards .cards:hover .iconHabilits {
+  transition: 0.5s;
+  filter: grayscale(0);
 }
 #habilidades #conteiner-resposta-abilidade {
   color: white;
@@ -366,6 +452,7 @@ input[type=checkbox] {
   margin: 10px 0px;
 }
 #projetos .contain-projetos .item-projetos {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -380,6 +467,9 @@ input[type=checkbox] {
   text-decoration: none;
   overflow: hidden;
 }
+#projetos .contain-projetos .item-projetos.SUBSTITUTO {
+  display: none;
+}
 #projetos .contain-projetos .item-projetos p {
   position: relative;
   background-color: rgba(4, 4, 4, 0.27);
@@ -392,9 +482,14 @@ input[type=checkbox] {
   width: 100%;
 }
 #projetos .contain-projetos .item-projetos img {
-  position: absolute;
-  height: 100%;
   width: 101%;
+  height: 150px;
+}
+#projetos .contain-projetos .item-projetos .containerBTN .btnPersonalizado {
+  border-radius: 0px;
+  border-width: 2px;
+  padding: 5px;
+  width: 135px;
 }
 #projetos .contain-projetos .item-projetos:hover {
   border: solid 2px rgb(255, 0, 0);
@@ -402,6 +497,83 @@ input[type=checkbox] {
 #projetos .contain-projetos .item-projetos:hover p {
   letter-spacing: 0.2em;
   transition: 0.4s;
+}
+#projetos input[type=radio] {
+  display: none;
+}
+#projetos .cardsCarrosel {
+  position: absolute;
+  width: 58%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  border-radius: 15px;
+  border: solid 3px rgb(255, 255, 255);
+  box-shadow: 0px 1px 8px rgb(255, 255, 255);
+  overflow: hidden;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+#projetos .cardsCarrosel img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+#projetos .cardsCarrosel .btnPersonalizado {
+  background-color: black;
+  position: absolute;
+  bottom: 10px;
+  padding: 10px 50px;
+}
+#projetos .cardsCarrosel .btnPersonalizado.deploy {
+  left: 50%;
+  transform: translateX(-120%);
+}
+#projetos .cardsCarrosel .btnPersonalizado.github {
+  right: 50%;
+  transform: translateX(120%);
+}
+#projetos .cardsCarrosel:hover {
+  border: solid 3px aqua;
+  box-shadow: 0px 1px 8px aqua;
+}
+#projetos #container-slider {
+  width: 80%;
+  min-height: 200px;
+  max-width: 900px;
+  display: flex;
+  transform-style: preserve-3d;
+  flex-direction: column;
+  margin: auto;
+}
+#projetos .cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#projetos #input-slider-1:checked ~ #cards #label-3,
+#projetos #input-slider-2:checked ~ #cards #label-1,
+#projetos #input-slider-3:checked ~ #cards #label-2 {
+  transform: translateX(-50%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+#projetos #input-slider-1:checked ~ #cards #label-2,
+#projetos #input-slider-2:checked ~ #cards #label-3,
+#projetos #input-slider-3:checked ~ #cards #label-1 {
+  transform: translateX(50%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+#projetos #input-slider-1:checked ~ #cards #label-1,
+#projetos #input-slider-2:checked ~ #cards #label-2,
+#projetos #input-slider-3:checked ~ #cards #label-3 {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  z-index: 1;
 }
 #projetos #btn-mais-projetos {
   display: none;
@@ -412,6 +584,15 @@ input[type=checkbox] {
 
 @media screen and (max-width: 920px) {
   #projetos .contain-projetos .projeto-descartavel {
+    display: none;
+  }
+  #projetos .contain-projetos .item-projetos.SUBSTITUTO {
+    display: inline-block;
+  }
+  #projetos .cardsCarrosel {
+    display: none;
+  }
+  #projetos #container-slider {
     display: none;
   }
   #projetos #btn-mais-projetos {
@@ -438,6 +619,18 @@ footer#contatos #animação-texto-contatos {
   flex-direction: column;
   gap: 10px;
   text-align: center;
+}
+footer#contatos #animação-texto-contatos .btnPersonalizado {
+  padding: 10px;
+}
+footer#contatos #animação-texto-contatos .btnPersonalizado::before {
+  width: 200%;
+  height: 0;
+}
+footer#contatos #animação-texto-contatos .btnPersonalizado:hover::before {
+  background-color: aqua;
+  height: 450%;
+  width: 200%;
 }
 footer#contatos #animação-texto-contatos .footer-cards {
   max-width: 200px;

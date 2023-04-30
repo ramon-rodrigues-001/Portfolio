@@ -29,7 +29,7 @@
             transition: .4s;
 
             &:hover {
-                color: rgb(180, 175, 175);
+                color: $info;
             }
         }
     }
@@ -125,7 +125,7 @@
                 z-index: 9999;
                 padding: 5px;
                 .tracos {
-                    background-color: red;
+                    background-color: $info;
                     margin: 5px 0px;
                     transition: .1s;
                     width: 40px;
@@ -185,7 +185,8 @@
     width: 100vw;
 
     #barra-de-scroll {
-        background-color: rgb(255, 0, 0);
+        background-color: $info;
+        box-shadow: 0px 0px 30px 0px $info;
         height: 3px;
         width: 0%;
         position: fixed;

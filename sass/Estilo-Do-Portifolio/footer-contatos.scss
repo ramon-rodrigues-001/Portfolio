@@ -15,6 +15,22 @@ footer#contatos {
         gap: 10px;
         text-align: center;
         
+        .btnPersonalizado {
+            padding: 10px;
+
+            &::before {
+                width: 200%;
+                height: 0;
+            }
+            &:hover {
+        
+                &::before {
+                    background-color: aqua;
+                    height: 450%;
+                    width: 200%;
+                }
+            }
+        }
         
         .footer-cards {
             max-width: 200px;

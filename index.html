@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="imagens/miniComputador.webp" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="imagens/miniComputador.webp" type="image/x-icon"> -->
 
     <!-- FONT [Ubunto]-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,20 +27,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     
 
-    <title>Portifolio</title>
+    <title>Portifolio 2222</title>
 </head>
 <body>
     <div id="container-hmf">
-        <header id="header-home">
-            <h1 id="logo"><span class="span-LetraVermelha">PORT</span>FOLIO</h1>
 
+        <header id="header-home">
+
+            <h1 id="logo"><span class="span-azulMarinho">PORT</span>FOLIO</h1>
+
+            <!-- Navbar para tela quandes -->
             <nav id="navbar">
                 <a href="#sobre-mim">SOBRE MIM</a>
                 <a href="#habilidades">HABILIDADES</a>
                 <a href="#projetos">PROJETOS</a>
                 <a href="#contatos">CONTATOS</a>
             </nav>
+            <!-- / Navbar para tela quandes -->
             
+            <!-- Navbar menu hamburguer tela peguena até 650px-->
             <input type="checkbox" name="check-menu" id="check-menu">
             <menu id="hamburguer">
                 <label for="check-menu">
@@ -59,31 +64,32 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="btn btn-outline-light itens_menu" href="#sobre-mim">Sobre Mim</a>
+                                    <a class="btn btn-outline-light btnPersonalizado itens_menu" href="#sobre-mim">Sobre Mim</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="btn btn-outline-light itens_menu" href="#habilidades">Habilidades</a>
+                                    <a class="btn btn-outline-light btnPersonalizado itens_menu" href="#habilidades">Habilidades</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="btn btn-outline-light itens_menu" href="#projetos">Projetos</a>
+                                    <a class="btn btn-outline-light btnPersonalizado itens_menu" href="#projetos">Projetos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="btn btn-outline-light itens_menu" href="#contatos">contatos</a>
+                                    <a class="btn btn-outline-light btnPersonalizado itens_menu" href="#contatos">contatos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="btn btn-outline-danger itens_menu" href="https://github.com/ramon-rodrigues-001" target="_blank">GITHUB</a>
+                                    <a class="btn btn-outline-danger btnPersonalizado itens_menu" href="https://github.com/ramon-rodrigues-001" target="_blank">GITHUB</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="btn btn-outline-danger itens_menu" href="https://www.linkedin.com/in/ramon-rodrigues-515a9b244/" target="_blank">LINKEDIN</a>
+                                    <a class="btn btn-outline-danger btnPersonalizado itens_menu" href="https://www.linkedin.com/in/ramon-rodrigues-515a9b244/" target="_blank">LINKEDIN</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </menu>
+            <!-- / Menu hamburguer -->
             
 
-            <a class="btn btn-outline-danger me-2" href="https://github.com/ramon-rodrigues-001/Portifolio" target="_blank" id="butao-github"><i class="bi bi-github"></i>  GITHUB</a>
+            <a class="btn btn-outline-info btnPersonalizado me-2" href="https://github.com/ramon-rodrigues-001/Portifolio" target="_blank" id="butao-github"><i class="bi bi-github"></i>  GITHUB</a>
         </header>
 
         <!-- BARRA DE PROGRESO -->
@@ -91,6 +97,8 @@
             <div id="barra-de-scroll">
             </div>
         </div>
+        <!-- / BARRA DE PROGRESO -->
+
 
         <main id="main-home">
 
@@ -102,7 +110,8 @@
                     </div>
                     <input type="checkbox" name="mais-sobreMim" id="mais-sobreMim">
                     <div  id="sm-direita">
-                        <h2 class="h1"> <span class="span-LetraVermelha">Sobre</span> Mim</h2>
+                        <h2 class="h1"> <span class="span-azulMarinho">Sobre</span> Mim</h2>
+                        <img src="imagens/icone-aspas.png" alt="aspas" class="icone_aspas" id="aspa-1">
                         <p id="texto">Oi eu sou o Ramon, um desenvolvedor web front-end de 18 anos que começou a estudar programação em 10/01/2022. 
                         <span id="texto-descartavel-1">
                             Sou apaixonado por tecnologia e adoro trabalhar no ambiente de front-end, pois acredito que o desenvolvimento web pode criar experiências incríveis para os usuários e ajudar as empresas a alcançarem seus objetivos. 
@@ -110,61 +119,72 @@
                                 Conheci a programação através do canal do curso em vídeo e depois comprei meu primeiro curso profissionalizante da OneBitCode, onde aprendi Sass, Bootstrap, Javascript, Typescript e muito mais. Estou animado para buscar novas oportunidades e expandir minhas habilidades para crescer profissionalmente.
                             </span>
                         </span></p>
+                        <img src="imagens/icone-aspas.png" alt="aspas" class="icone_aspas" id="aspa-2">
                     </div>
                     <label for="mais-sobreMim" id="label-mais-sobreMim">
-                        <a class="btn btn-outline-danger" id="btn-mais-sobreMim" onclick="mostrar_maisSobreMim()">MOSTRAR MAIS</a>
+                        <a class="btn btn-outline-info btnPersonalizado" id="btn-mais-sobreMim" onclick="mostrar_maisSobreMim()">MOSTRAR MAIS</a>
                     </label>
                 </div>
             </section>
+            <!-- / SOBRE MIM -->
 
 
-            <!-- Habilidades -->    
+            <!-- HABILIDADES -->    
             <section id="habilidades">
                 <div data-aos="zoom-in">  <!-- DIV BIBLIOTECA ANIMAÇÃO -->
                     <h2 class="h1 text-center" id="inicio">
-                        <span class="span-LetraVermelha">Habilid</span>ades
+                        <span class="span-azulMarinho">Habilid</span>ades
                     </h2>
                     <input type="checkbox" name="input-habilidades" id="mais-habilidades">
                     <div id="conteiner-cards">
                         <a href="#habilidades" class="cards" id="h1">
+                            <img src="imagens/icon-habilits/html5-plain.svg" class="iconHabilits" alt="icon_HTML_5">
                             <h3 class="title-ability">HTML5</h3>
                             <p class="h5 px-2">Avançado</p>
                         </a>
                         <a href="#habilidades" class="cards impar" id="h2">
+                            <img src="imagens/icon-habilits/css3-plain.svg" class="iconHabilits" alt="icon_CSS_3">
                             <h3 class="title-ability">CSS</h3>
                             <p class="h5 px-2">Avançado</p>
                         </a>
                         <a href="#habilidades" class="cards" id="h3">
+                            <img src="imagens/icon-habilits/javascript-plain.svg" class="iconHabilits" alt="icon_JS">
                             <h3 class="title-ability">JAVASCRIPT</h3>
                             <p class="h5 px-2">Avançado</p>
                         </a>
                         <a href="#habilidades" class="cards" id="h4">
+                            <img src="imagens/icon-habilits/sass-original.svg" class="iconHabilits" alt="icon_SASS">
                             <h3 class="title-ability">SASS</h3>
                             <p class="h5 px-2">Basico</p>
                         </a>
                         <a href="#habilidades" class="cards habilidade-descartavel impar" id="h5">
+                            <img src="imagens/icon-habilits/bootstrap-plain.svg" class="iconHabilits" alt="icon_BOOTSTRAP">
                             <h3 class="title-ability">BOOTSTRAP</h3>
                             <p class="h5 px-2">Basico</p>
                         </a>
                         <a href="#habilidades" class="cards habilidade-descartavel" id="h6">
-                            <h3 class="title-ability">PYTHON</h3>
+                            <img src="imagens/icon-habilits/react-original.svg" class="iconHabilits" alt="icon_REACT">
+                            <h3 class="title-ability">REACT</h3>
                             <p class="h5 px-2">Iniciante</p>
                         </a>
                         <a href="#habilidades" class="cards habilidade-descartavel" id="h7">
+                            <img src="imagens/icon-habilits/git-plain.svg" class="iconHabilits" alt="icon_GIT">
                             <h3 class="title-ability">GIT</h3>
                             <p class="h5 px-2">Iniciante</p>
                         </a>
                         <a href="#habilidades" class="cards habilidade-descartavel impar" id="h8">
+                            <img src="imagens/icon-habilits/typescript-plain.svg" class="iconHabilits" alt="icon_TYPESCRIPT">
                             <h3 class="title-ability">TYPESCRIPT</h3>
                             <p class="h5 px-2">Pretendo Em Breve</p>
                         </a>
                         <a href="#habilidades" class="cards habilidade-descartavel" id="h9">
+                            <img src="imagens/icon-habilits/bulma-plain.svg" class="iconHabilits" alt="icon_BULMA">
                             <h3 class="title-ability">BULMA</h3>
                             <p class="h5 px-2">Pretendo Em Breve</p>
                         </a>
                         <!-- Butão ligado ou input checkbox das habilidades -->
                         <label for="mais-habilidades">
-                            <a class="btn btn-outline-danger" id="btn-mais-habilidades">MOSTRAR MAIS</a>
+                            <a class="btn btn-outline-info btnPersonalizado" id="btn-mais-habilidades">MOSTRAR MAIS</a>
                         </label>
                     </div>
                     <div class="container" id="conteiner-resposta-abilidade">
@@ -173,29 +193,93 @@
                     </div>
                 </div>
             </section>
+            <!-- / HABILIDADES -->   
 
             <!-- PROJETOS -->      
             <section id="projetos">
                 <div data-aos="zoom-in">  <!-- DIV BIBLIOTECA ANIMAÇÃO -->
                     <h2 class="h1 text-center">
-                        <span class="span-LetraVermelha">Proj</span>etos
+                        <span class="span-azulMarinho">Proj</span>etos
                     </span></h2>
+
+                    <!-- CARROSEL DE PROJETOS -->
+                    <div id="container-slider">
+                        <input type="radio" name="input-slider" id="input-slider-1" checked>
+                        <input type="radio" name="input-slider" id="input-slider-2">
+                        <input type="radio" name="input-slider" id="input-slider-3">
+    
+                        <div id="cards">
+                            <label for="input-slider-1" class="cardsCarrosel" id="label-1">
+                                <img src="imagens/god-of-war-tela.jpg" alt="projeto-GodOfWar">
+                                <a src="" class="btn btnPersonalizado deploy">
+                                    <span class="detalhes-btn quadrado_1"></span>
+                                    DEPLOY
+                                    <span class="detalhes-btn quadrado_2"></span>
+                                </a>
+                                <a class="btn btnPersonalizado github">
+                                    <span class="detalhes-btn quadrado_1"></span>
+                                    GITHUB
+                                    <span class="detalhes-btn quadrado_2"></span>
+                                </a>
+                            </label>
+                            <label for="input-slider-2" class="cardsCarrosel" id="label-2">
+                                <img src="imagens/imagen-do-projeto-calculadora_js.png" alt="projeto-GodOfWar">
+                                <a class="btn btnPersonalizado deploy">
+                                    <span class="detalhes-btn quadrado_1"></span>
+                                    DEPLOY
+                                    <span class="detalhes-btn quadrado_2"></span>
+                                </a>
+                                <a class="btn btnPersonalizado github">
+                                    <span class="detalhes-btn quadrado_1"></span>
+                                    GITHUB
+                                    <span class="detalhes-btn quadrado_2"></span>
+                                </a>
+                            </label>
+                            <label for="input-slider-3" class="cardsCarrosel" id="label-3">
+                                <img src="imagens/imagen-do-projeto-SpaceX-Mini.png" alt="projeto-spaceX">
+                                <a class="btn btnPersonalizado deploy">
+                                    <span class="detalhes-btn quadrado_1"></span>
+                                    DEPLOY
+                                    <span class="detalhes-btn quadrado_2"></span>
+                                </a>
+                                <a class="btn btnPersonalizado github">
+                                    <span class="detalhes-btn quadrado_1"></span>
+                                    GITHUB
+                                    <span class="detalhes-btn quadrado_2"></span>
+                                </a>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- / CARROSEL DE PROJETOS -->
+
+                    <!-- CARDS DE PROJETOS -->
                     <input type="checkbox" name="mais-projetos" id="mais-projetos">
                     <div class="contain-projetos">
-                        <a href="pastas_de_projetos/projeto01.html" class="item-projetos">
-                            <img src="imagens/imagen-do-projeto-calculadora_js-Mini.png" alt="">
-                            <h3>Calculadora JS</h3>
-                        </a>
 
-                        <a href="pastas_de_projetos/projeto02.html" class="item-projetos">
-                            <img src="imagens/imagen-do-projeto-SpaceX-Mini.png" alt="">
-                            <h3>SpaceX</h3>
-                        </a>
+                        <div class="item-projetos SUBSTITUTO">
+                            <img src="imagens/imagen-do-projeto-calculadora_js-Mini.png" alt="calculadora_js">
+                            <span class="containerBTN">
+                                <a href="" class="btn btnPersonalizado">DEPLOY</a>
+                                <a href="" class="btn btnPersonalizado">GITHUB</a>
+                            </span>
+                        </div>
 
-                        <a href="pastas_de_projetos/projeto03.html" class="item-projetos">
-                            <img src="imagens/god-of-war-tela.jpg" alt="">
-                            <h3>God Of War</h3>
-                        </a>
+                        <div href="#" class="item-projetos SUBSTITUTO">
+                            <img src="imagens/god-of-war-tela.jpg" alt="god-of-war">
+                            <span class="containerBTN">
+                                <a href="" class="btn btnPersonalizado">DEPLOY</a>
+                                <a href="" class="btn btnPersonalizado">GITHUB</a>
+                            </span>
+                        </div>
+
+                        <div href="#" class="item-projetos SUBSTITUTO">
+                            <img src="imagens/imagen-do-projeto-SpaceX-Mini.png" alt="SpaceX">
+                            <span class="containerBTN">
+                                <a href="" class="btn btnPersonalizado">DEPLOY</a>
+                                <a href="" class="btn btnPersonalizado">GITHUB</a>
+                            </span>
+                        </div>
+
 
                         <a href="#" class="item-projetos projeto-descartavel">
                             <p class="h1">VAZIO</p>
@@ -209,29 +293,31 @@
                             <p class="h1">VAZIO</p>
                         </a>
                     </div>
+                    <!-- / CARDS DE PROJETOS -->
                     
                     <label for="mais-projetos" id="label-projetos">
-                        <a class="btn btn-outline-danger" id="btn-mais-projetos"  onclick="mostrar_projetos()">MOSTRAR MAIS</a>
+                        <a class="btn btn-outline-info btnPersonalizado" id="btn-mais-projetos"  onclick="mostrar_projetos()">MOSTRAR MAIS</a>
                     </label>
                 </div>
             </section>
+            <!-- / PROJETOS -->
         </main>
 
 
         <!-- FOOTER CONTATOS --> 
         <footer id="contatos">
             <div data-aos="zoom-in" id="animação-texto-contatos"> <!-- DIV BIBLIOTECA ANIMAÇÃO -->
-                <h2 class="h1 text-center"><span class="span-LetraVermelha">Cont</span>atos</span></h2>
+                <h2 class="h1 text-center"><span class="span-azulMarinho">Cont</span>atos</span></h2>
                 <div>
-                    <a class="footer-cards btn btn-outline-danger" href="https://www.linkedin.com/in/ramon-rodrigues-515a9b244/" target="_blank">
+                    <a class="btn btn-outline-info btnPersonalizado footer-cards" href="https://www.linkedin.com/in/ramon-rodrigues-515a9b244/" target="_blank">
                         <p class="h1"><i class="bi bi-linkedin"></i></p>
                         Linkedin
                     </a>
-                    <a class="footer-cards btn btn-outline-danger" href="https://github.com/ramon-rodrigues-001" target="_blank">
+                    <a class="btn btn-outline-info btnPersonalizado footer-cards" href="https://github.com/ramon-rodrigues-001" target="_blank">
                         <p class="h1"><i class="bi bi-github"></i></p>
                         Github
                     </a>
-                    <a class="footer-cards btn btn-outline-danger" href="https://www.facebook.com/profile.php?id=100084075099565" target="_blank">
+                    <a class="btn btn-outline-info btnPersonalizado footer-cards" href="https://www.facebook.com/profile.php?id=100084075099565" target="_blank">
                         <p class="h1"><i class="bi bi-facebook"></i></p>
                         Facebook
                     </a>
@@ -245,6 +331,7 @@
                 </p>
             </div>
         </footer>
+        <!-- / FOOTER CONTATOS --> 
     </div>
 
     <!-- BIBLIOTECA DE ANIMAÇÃO DE TEXTO JAVASCRIPT -->

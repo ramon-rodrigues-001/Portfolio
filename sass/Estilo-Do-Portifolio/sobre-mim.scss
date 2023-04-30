@@ -16,7 +16,7 @@
     font-size: 1.15em;
     font-weight: bold;
     background-color: $preto-absoluto;
-    color: $color;
+    color: aqua;
     max-width: 100vw;
     min-height: 100vh;
     padding-top: 70px;
@@ -43,7 +43,7 @@
             animation-iteration-count: infinite;
             padding: 25px;
             border: 1.5px solid transparent;
-            border-radius: 30%;
+            border-radius: 45% 30%;
             max-width: 300px;
 
             &:hover {
@@ -58,7 +58,16 @@
         padding: 10px 10px 10px 10px;
         
         #texto { 
+            display: inline;
             font-family: 'Ubuntu', sans-serif;
+        }
+
+        .icone_aspas {
+            width: 15px;
+            
+            &#aspa-2 {
+                transform: rotate(150deg);
+            }
         }
     }
 }
