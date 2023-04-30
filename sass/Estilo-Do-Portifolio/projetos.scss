@@ -68,7 +68,7 @@
             }
 
             &:hover {
-                border: solid 2px rgb(255, 0, 0);
+                border: solid 2px $info;
 
                 p {
                     letter-spacing: 0.2em;

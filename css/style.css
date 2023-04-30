@@ -492,7 +492,7 @@ input[type=checkbox] {
   width: 135px;
 }
 #projetos .contain-projetos .item-projetos:hover {
-  border: solid 2px rgb(255, 0, 0);
+  border: solid 2px #31D2F2;
 }
 #projetos .contain-projetos .item-projetos:hover p {
   letter-spacing: 0.2em;
