@@ -40,7 +40,7 @@
             <nav id="navbar">
                 <a href="#sobre-mim">SOBRE MIM</a>
                 <a href="#habilidades">HABILIDADES</a>
-                <a href="#projetos">PROJETOS</a>
+                <a href="#ancora-projetos">PROJETOS</a>
                 <a href="#contatos">CONTATOS</a>
             </nav>
             <!-- / Navbar para tela quandes -->
@@ -70,7 +70,7 @@
                                     <a class="btn btn-outline-light btnPersonalizado itens_menu" href="#habilidades">Habilidades</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="btn btn-outline-light btnPersonalizado itens_menu" href="#projetos">Projetos</a>
+                                    <a class="btn btn-outline-light btnPersonalizado itens_menu" href="#ancora-projetos">Projetos</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="btn btn-outline-light btnPersonalizado itens_menu" href="#contatos">contatos</a>
@@ -195,13 +195,18 @@
             </section>
             <!-- / HABILIDADES -->   
 
-            <!-- PROJETOS -->      
+
+
+
+
+            
+            <!-- PROJETOS -->  
+            <span id="ancora-projetos"></span> <!-- Ancora -->  
             <section id="projetos">
                 <div data-aos="zoom-in">  <!-- DIV BIBLIOTECA ANIMAÇÃO -->
                     <h2 class="h1 text-center">
                         <span class="span-azulMarinho">Proj</span>etos
-                    </span></h2>
-
+                    </h2>
                     <!-- CARROSEL DE PROJETOS -->
                     <div id="container-slider">
                         <input type="radio" name="input-slider" id="input-slider-1" checked>
@@ -209,6 +214,7 @@
                         <input type="radio" name="input-slider" id="input-slider-3">
     
                         <div id="cards">
+                            
                             <label for="input-slider-1" class="cardsCarrosel" id="label-1">
                                 <img src="imagens/god-of-war-tela.jpg" alt="projeto-GodOfWar">
                                 <a href="https://ramon-rodrigues-001.github.io/God-Of-War/" target="_blank" class="btn btnPersonalizado deploy">
@@ -222,19 +228,21 @@
                                     <span class="detalhes-btn quadrado_2"></span>
                                 </a>
                             </label>
+
                             <label for="input-slider-2" class="cardsCarrosel" id="label-2">
-                                <img src="imagens/imagen-do-projeto-calculadora_js.png" alt="projeto-GodOfWar">
-                                <a href="https://ramon-rodrigues-001.github.io/Calculadora_JS/" target="_blank" class="btn btnPersonalizado deploy">
+                                <img src="imagens/projeto-blizzard.webp">
+                                <a href="https://ramon-rodrigues-001.github.io/Games-Blizzard/" target="_blank" class="btn btnPersonalizado deploy">
                                     <span class="detalhes-btn quadrado_1"></span>
                                     DEPLOY
                                     <span class="detalhes-btn quadrado_2"></span>
                                 </a>
-                                <a href="https://ramon-rodrigues-001.github.io/Calculadora_JS/" target="_blank" class="btn btnPersonalizado github">
+                                <a href="https://github.com/ramon-rodrigues-001/Games-Blizzard" target="_blank" class="btn btnPersonalizado github">
                                     <span class="detalhes-btn quadrado_1"></span>
                                     GITHUB
                                     <span class="detalhes-btn quadrado_2"></span>
                                 </a>
                             </label>
+                            
                             <label for="input-slider-3" class="cardsCarrosel" id="label-3">
                                 <img src="imagens/imagen-do-projeto-SpaceX-Mini.png" alt="projeto-spaceX">
                                 <a href="https://ramon-rodrigues-001.github.io/Projeto-SpaceX/" target="_blank" class="btn btnPersonalizado deploy">
@@ -250,6 +258,17 @@
                             </label>
                         </div>
                     </div>
+                    <div id="descrition-of-project">
+                        <h2>
+                            <span class="span-azulMarinho" id="title-descrition-of-project">
+                                God Of War
+                            </span>
+                        </h2>
+                        <p id="paragrafh-descrition-of-project">
+                            O projeto consiste em uma página de informações sobre o jogo 'God of War Ragnarök', que apresenta modo de jogar, personagens e trailer. Este projeto tem como foco o desenvolvimento da interfaçe não tendo um back-end robusto. Para a criação utilizei as tecnologias HTML, CSS, Sass, Bootstrap e JavaScript.
+                        </p>
+                        <!-- inspiração na página de jogos da Blizzard -->
+                    </div>
                     <!-- / CARROSEL DE PROJETOS -->
 
                     <!-- CARDS DE PROJETOS -->
@@ -257,18 +276,18 @@
                     <div class="contain-projetos">
 
                         <div class="item-projetos SUBSTITUTO">
-                            <img src="imagens/imagen-do-projeto-calculadora_js-Mini.png" alt="calculadora_js">
+                            <img src="imagens/projeto-blizzard.webp">
                             <span class="containerBTN">
-                                <a href="https://ramon-rodrigues-001.github.io/Calculadora_JS/" target="_blank" class="btn btnPersonalizado">
+                                <a href="https://ramon-rodrigues-001.github.io/Games-Blizzard/" target="_blank" class="btn btnPersonalizado">
                                     DEPLOY
                                 </a>
-                                <a href="https://ramon-rodrigues-001.github.io/Calculadora_JS/" target="_blank" class="btn btnPersonalizado">
+                                <a href="https://github.com/ramon-rodrigues-001/Games-Blizzard" target="_blank" class="btn btnPersonalizado">
                                     GITHUB
                                 </a>
                             </span>
                         </div>
 
-                        <div href="#" class="item-projetos SUBSTITUTO">
+                        <div class="item-projetos SUBSTITUTO">
                             <img src="imagens/god-of-war-tela.jpg" alt="god-of-war">
                             <span class="containerBTN">
                                 <a href="https://ramon-rodrigues-001.github.io/God-Of-War/" target="_blank" class="btn btnPersonalizado">
@@ -278,7 +297,7 @@
                             </span>
                         </div>
 
-                        <div href="#" class="item-projetos SUBSTITUTO">
+                        <div class="item-projetos SUBSTITUTO">
                             <img src="imagens/imagen-do-projeto-SpaceX-Mini.png" alt="SpaceX">
                             <span class="containerBTN">
                                 <a href="https://ramon-rodrigues-001.github.io/Projeto-SpaceX/" target="_blank" class="btn btnPersonalizado">
@@ -291,9 +310,17 @@
                         </div>
 
 
-                        <a href="#" class="item-projetos projeto-descartavel">
-                            <p class="h1">VAZIO</p>
-                        </a>
+                        <div class="item-projetos projeto-descartavel">
+                            <img src="imagens/imagen-do-projeto-calculadora_js-Mini.png">
+                            <span class="containerBTN">
+                                <a href="https://ramon-rodrigues-001.github.io/Calculadora_JS/" target="_blank" class="btn btnPersonalizado">
+                                    DEPLOY
+                                </a>
+                                <a href="https://github.com/ramon-rodrigues-001/Calculadora_JS" target="_blank" class="btn btnPersonalizado">
+                                    GITHUB
+                                </a>
+                            </span>
+                        </div>
 
                         <a href="#" class="item-projetos projeto-descartavel">
                             <p class="h1">VAZIO</p>
@@ -302,6 +329,8 @@
                         <a href="#" class="item-projetos projeto-descartavel">
                             <p class="h1">VAZIO</p>
                         </a>
+
+                        
                     </div>
                     <!-- / CARDS DE PROJETOS -->
                     
@@ -312,6 +341,11 @@
             </section>
             <!-- / PROJETOS -->
         </main>
+
+
+
+
+
 
 
         <!-- FOOTER CONTATOS --> 

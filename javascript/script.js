@@ -58,9 +58,48 @@ document.querySelectorAll('.cards').forEach((ev)=>{
 
 
 // BARRA DE PROGRESSO
-
 import { indicaProgresso } from "./barra-de-progresso.js" 
 
 window.onscroll = function() {
     indicaProgresso() 
 }
+
+
+
+
+// MUDAR DESCRIÇÃO DO PROJETO DE ACORDO COM INPUT CHECHECK
+
+function criar_Descrition(title, text) {
+    const container_De_Descrition = document.querySelector('#descrition-of-project')
+    container_De_Descrition.innerText = ''
+
+    const h2 = document.createElement('h2')
+    h2.id = 'title-descrition-of-project'
+    h2.dataset.aos = 'flip-right'
+
+    const span = document.createElement("span")
+    span.classList.add("span-azulMarinho")
+    span.innerText = title
+
+    const p = document.createElement('p')
+    p.innerText = text
+    p.id = 'paragrafh-descrition-of-project'
+    p.dataset.aos = 'flip-right'
+
+
+    h2.appendChild(span)
+    container_De_Descrition.appendChild(h2)
+    container_De_Descrition.appendChild(p)
+}
+
+const input_slider_1 = document.querySelector('#input-slider-1').addEventListener('change', ()=> {
+    criar_Descrition("God Of War", "O projeto consiste em uma página de informações sobre o jogo 'God of War Ragnarök', que apresenta modo de jogar, personagens e trailer. Este projeto tem como foco o desenvolvimento da interfaçe não tendo um back-end robusto. Para a criação utilizei as tecnologias HTML, CSS, Sass, Bootstrap e JavaScript.")
+})
+
+const input_slider_2 = document.querySelector('#input-slider-2').addEventListener('change', ()=> {
+    criar_Descrition("Blizzard", "Inspirado na página de jogos da Blizzard, este é considera por mim o meu projeto mais bonito sendo tambem o meu favorito, foi possível implementar soluções criativas e adaptá-las às necessidades do projeto. Tecnologias HTML, CSS, JavaScript, Sass e Bootstrap")
+})
+
+const input_slider_3 = document.querySelector('#input-slider-3').addEventListener('change', ()=> {
+    criar_Descrition("SpaceX", "Este é um projeto que desenvolvi há algum tempo, e embora esteja desatualizado em relação às minhas novas habilidades, optei por mantê-lo aqui, pois planejo atualizá-lo em breve com o uso do React e outras tecnologias mais modernas. Estou animado para melhorar seu desempenho e torná-lo uma referência do meu trabalho atual.")
+})

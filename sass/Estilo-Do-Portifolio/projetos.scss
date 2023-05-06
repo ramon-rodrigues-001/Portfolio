@@ -8,7 +8,7 @@
     justify-content: center;
     background-color: $preto-absoluto;
     min-height: 100vh;
-    padding: 10px;
+    padding: 55px 10px 30px 10px;
 
     .contain-projetos {
         display: flex;
@@ -79,6 +79,20 @@
     }
     
 
+    #descrition-of-project {
+        text-align: center;
+        padding: 5px 20px;
+        margin: 40px auto;
+        max-width: 80vw;
+        border-bottom: solid .5px white;
+        border-radius: 100px;
+
+        p {
+            color: $info;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+    }
 
 
     input[type=radio] {
@@ -190,6 +204,10 @@
                     display: inline-block;
                 }
             }
+        }
+
+        #descrition-of-project {
+            display: none;
         }
 
         .cardsCarrosel {

@@ -440,7 +440,7 @@ input[type=checkbox] {
   justify-content: center;
   background-color: black;
   min-height: 100vh;
-  padding: 10px;
+  padding: 55px 10px 30px 10px;
 }
 #projetos .contain-projetos {
   display: flex;
@@ -497,6 +497,19 @@ input[type=checkbox] {
 #projetos .contain-projetos .item-projetos:hover p {
   letter-spacing: 0.2em;
   transition: 0.4s;
+}
+#projetos #descrition-of-project {
+  text-align: center;
+  padding: 5px 20px;
+  margin: 40px auto;
+  max-width: 80vw;
+  border-bottom: solid 0.5px white;
+  border-radius: 100px;
+}
+#projetos #descrition-of-project p {
+  color: #31D2F2;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 #projetos input[type=radio] {
   display: none;
@@ -589,6 +602,9 @@ input[type=checkbox] {
   #projetos .contain-projetos .item-projetos.SUBSTITUTO {
     display: inline-block;
   }
+  #projetos #descrition-of-project {
+    display: none;
+  }
   #projetos .cardsCarrosel {
     display: none;
   }
@@ -635,84 +651,6 @@ footer#contatos #animação-texto-contatos .btnPersonalizado:hover::before {
 footer#contatos #animação-texto-contatos .footer-cards {
   max-width: 200px;
   margin: 10px;
-}
-
-body.proj {
-  background-color: #212529;
-}
-
-#container {
-  background-color: #212529;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-  margin: auto;
-  min-height: 100vh;
-  max-width: 1200px;
-}
-#container img {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#container div#ladoDireitoDoContainer {
-  color: white;
-  font-size: 1.2em;
-  border-left: solid 1.5px white;
-  padding: 20px;
-}
-#container div#ladoDireitoDoContainer #containerBtn {
-  text-align: center;
-}
-#container div#ladoDireitoDoContainer #containerBtn #button {
-  width: 48%;
-  font-weight: bold;
-}
-#container div#ladoDireitoDoContainer #containerBtn #voltar {
-  font-weight: bold;
-  width: 100%;
-  margin: 20px 0px;
-}
-
-@media screen and (max-width: 1000px) {
-  #container {
-    grid-template-columns: 1fr;
-    display: block;
-  }
-  #container div#ladoDireitoDoContainer {
-    text-align: center;
-    border-left: none;
-  }
-}
-@media screen and (max-width: 410px) {
-  #container #button {
-    height: 60px;
-  }
-}
-#container img#imgProjeto01 {
-  width: 80%;
-}
-
-#container .carroselProjeto02 {
-  width: 90%;
-  margin: auto;
-}
-
-#container img#imgProjeto3 {
-  width: 100%;
-  max-width: 550px;
-  padding: 10px;
-}
-
-@media screen and (max-width: 1000px) {
-  #container {
-    display: block;
-  }
-  #container img#imgProjeto3 {
-    display: block;
-    margin: auto;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
