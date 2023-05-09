@@ -43,10 +43,10 @@ export const clicarEmCards = function (ev) {
 const text = document.querySelector('#text-resposta')
 
 function html() {
-    criar('HTML5', 'O esqueleto do projeto blablabla Facil para dedeu')
+    criar('HTML5', 'O esqueleto do projeto é o que dá a base para o desenvolvimento da aplicação. Com boas práticas é possível criar um projeto consistente e padronizado, isso torna a aplicação mais fácil de ser entendida e mantida no futuro, além de garantir uma melhor experiência para o usuário final.')
 }
 function css() {
-    criar('CSS', 'Esse vai dar uma boa dor de cabeça kkkk, Brincadeira CSS é a melhor parte.')
+    criar('CSS', 'Esse ferramenta vai dar uma boa dor de cabeça kkkk. Brincadeira CSS é a melhor parte e é uma parte fundamental do desenvolvimento web. ainda mais com a suas extneções como o "SASS"')
 }
 function javascript() {
     criar('JavaScript', 'Estou nesmo momento estudando javascript, afinal não tem fim, estou a todo momento estarei estudando essa linguagem incrivel')
@@ -58,7 +58,7 @@ function bootstrap() {
     criar('Bootstrap', 'Ao')
 }
 function python() {
-criar('Python', 'AAah Python, a primeira linguagem de programação a qual tive contato passei muito tempo nesta linguagem aprendendo basicamente logica, as vezes volto e dou uma praticadinha, mais não é mais meu foco')
+criar("React", 'Iniciei recentemente os estudos em React, após ter concluído o curso avançado de JavaScript da OneBitCode. A proposta dessa tecnologia é incrível e considero que seja o próximo passo para aperfeiçoar meus conhecimentos. Dessa forma, pretendo refazer meus projetos utilizando essa ferramenta poderosa.')
 }
 function git() {
     criar('Git')
