@@ -49,25 +49,25 @@ function css() {
     criar('CSS', 'Esse ferramenta vai dar uma boa dor de cabeça kkkk. Brincadeira CSS é a melhor parte e é uma parte fundamental do desenvolvimento web. ainda mais com a suas extneções como o "SASS"')
 }
 function javascript() {
-    criar('JavaScript', 'Estou nesmo momento estudando javascript, afinal não tem fim, estou a todo momento estarei estudando essa linguagem incrivel')
+    criar('JavaScript', 'Atualmente, estou estudando JavaScript e é impressionante como não há fim para o aprendizado nessa linguagem. Estou sempre me dedicando a estudá-la.')
 }
 function sass() {
-    criar('Sass', 'Que feramenta massa, estilizar fica muito mais intuitiva com ela')
+    criar('Sass', 'Que ferramenta incrível!, o SASS permite a criação de folhas de estilo mais organizadas e fáceis de manter, reduzindo o tempo e o esforço necessários para realizar alterações e atualizações')
 }
 function bootstrap() {
-    criar('Bootstrap', 'Ao')
+    criar('Bootstrap', 'Esta ferramneta busca agilizar o processo de criação de interfaces web, tornando-o mais eficiente, produtivo e consistente.')
 }
 function python() {
-criar("React", 'Iniciei recentemente os estudos em React, após ter concluído o curso avançado de JavaScript da OneBitCode. A proposta dessa tecnologia é incrível e considero que seja o próximo passo para aperfeiçoar meus conhecimentos. Dessa forma, pretendo refazer meus projetos utilizando essa ferramenta poderosa.')
+    criar("React", 'Iniciei recentemente os estudos em React, após ter concluído o curso avançado de JavaScript da OneBitCode. A proposta dessa tecnologia é incrível e considero que seja o próximo passo para aperfeiçoar meus conhecimentos. Dessa forma, pretendo refazer meus projetos utilizando essa ferramenta poderosa.')
 }
 function git() {
     criar('Git')
 }
 function typescript() {
-    criar('TypeScript')
+    criar('TypeScript', "TypeScript pode ser a escolha certa para desenvolver código mais seguro, modular e fácil de manter.")
 }
 function bulma() {
-    criar('bulma')
+    criar('Bulma', "")
 }
 
 
