@@ -21,7 +21,7 @@ Este é meu portfólio pessoal, nele você me conhecera melhor, e vera meus melh
     <h3>Links</h3>
     <li><a href="https://ramon-rodrigues-001.github.io/Portifolio/" target="_blank">Ver Site Hospedado "Deploy"</a></li>
     <li><a href="https://michalsnik.github.io/aos/" target="_blank">Biblioteca de animação de texto: AOS Animation</a></li>
-    <li><a href="https://micku7zu.github.io/vanilla-tilt.js/)" target="_blank">Biblioteca de animação de cards: Vanilla-tilt-js</a></li>
+    <li><a href="https://micku7zu.github.io/vanilla-tilt.js/" target="_blank">Biblioteca de animação de cards: Vanilla-tilt-js</a></li>
   </ul>
 </div>
 
