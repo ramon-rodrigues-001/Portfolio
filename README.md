@@ -20,7 +20,7 @@ Este é meu portfólio pessoal, nele você me conhecera melhor, e vera meus melh
      <li>HTML</li>
      <li>CSS</li>
      <li>JavaScript</li>
-     <li>Sass</li>
+     <li>SASS</li>
      <li>Bootstrap</li>
   </ul> <br>
   <ul>
