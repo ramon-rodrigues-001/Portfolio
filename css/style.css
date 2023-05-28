@@ -282,7 +282,8 @@ input[type=checkbox] {
 }
 #sobre-mim #sm-esquerda {
   text-align: center;
-  padding: 30px 20px;
+  padding: 10px;
+  border-radius: 30%;
 }
 #sobre-mim #sm-esquerda #img-flutuante {
   animation-name: img-flutuante;
@@ -290,15 +291,12 @@ input[type=checkbox] {
   animation-iteration-count: infinite;
   padding: 25px;
   border: 1.5px solid transparent;
-  border-radius: 45% 30%;
+  border-radius: 30%;
   max-width: 300px;
-}
-#sobre-mim #sm-esquerda #img-flutuante:hover {
-  border: 1.5px solid #ff0000;
 }
 #sobre-mim #sm-direita {
   flex: 0 1 700px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
 }
 #sobre-mim #sm-direita #texto {
   display: inline;
