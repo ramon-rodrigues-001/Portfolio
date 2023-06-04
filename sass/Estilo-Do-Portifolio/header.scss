@@ -22,6 +22,10 @@
         display: flex;
         gap: 28px;
 
+        .aspas-navbar {
+            color: transparent;
+        }
+
         a {
             font: bold 0.8em normal Arial, sans-serif;
             color: $color;
@@ -30,6 +34,10 @@
 
             &:hover {
                 color: $info;
+
+                .aspas-navbar {
+                    color: $info;
+                }
             }
         }
     }

@@ -1,24 +1,24 @@
 @keyframes img-flutuante {
     0% {
-        transform: translateY(25px);
+        transform: translateY(10px);
     }
     50% {
-        transform: translateY(-25px);
+        transform: translateY(-10px);
     }
     100% {
-        transform: translateY(25px);
+        transform: translateY(10px);
     }
 }
 
 #sobre-mim {
     display: flex;
     align-items: center;
-    font-size: 1.15em;
+    font-size: 1em;
     font-weight: bold;
     background-image: linear-gradient(to top, #02132B, #021431);
     color: aqua;
     max-width: 100vw;
-    min-height: 100vh;
+    min-height: 90vh;
     padding-top: 70px;
 
     #div-animação-header {
@@ -45,13 +45,13 @@
             padding: 25px;
             border: 1.5px solid transparent;
             border-radius: 30%;
-            max-width: 300px;
+            max-width: 330px;
         }
     }
     
 
     #sm-direita {
-        flex: 0 1 700px;
+        flex: 0 1 600px;
         padding: 10px;
         
         #texto { 
