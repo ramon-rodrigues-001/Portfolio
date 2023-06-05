@@ -660,13 +660,17 @@ input[type=checkbox] {
   background-color: aqua;
   height: 600%;
 }
+#vamos-trabalhar-juntos .convite-de-trabalho button a {
+  text-decoration: none;
+  color: #000000;
+}
 #vamos-trabalhar-juntos .convite-de-trabalho button i {
   position: absolute;
-  left: 50px;
+  left: 40px;
   font-size: 1.2em;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   #vamos-trabalhar-juntos .convite-de-trabalho {
     padding: 10px;
   }
@@ -674,26 +678,27 @@ input[type=checkbox] {
     min-width: 240px;
   }
   #vamos-trabalhar-juntos .convite-de-trabalho button i {
-    position: absolute;
     left: 20px;
     font-size: 1em;
   }
 }
 footer#contatos {
+  font-size: 0.9em;
+  font-weight: bold;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 200px;
   background-color: #010f25;
   color: white;
   min-height: 100vh;
 }
 footer#contatos #animação-texto-contatos {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
   text-align: center;
 }
 footer#contatos #animação-texto-contatos .btnPersonalizado {
@@ -714,7 +719,7 @@ footer#contatos #animação-texto-contatos .footer-cards {
 }
 footer#contatos #animação-texto-contatos form {
   text-align: left;
-  padding: 20px;
+  padding: 10px;
   margin-top: 15px;
 }
 footer#contatos #animação-texto-contatos form h2 {
@@ -732,7 +737,7 @@ footer#contatos #animação-texto-contatos form #div-name-email input {
 }
 footer#contatos #animação-texto-contatos form #div-textarea textarea {
   font-weight: bold;
-  width: 100%;
+  width: 98%;
   border-radius: 10px;
   padding: 10px 20px;
 }
@@ -743,7 +748,7 @@ footer#contatos #animação-texto-contatos form #submit {
   border-radius: 10px;
   border: solid 1.5px white;
   margin: 30px 0px;
-  width: 280px;
+  width: 240px;
   padding: 10px 20px;
 }
 footer#contatos #animação-texto-contatos form #submit:hover {
@@ -752,6 +757,15 @@ footer#contatos #animação-texto-contatos form #submit:hover {
   color: aqua;
 }
 
+@media screen and (max-width: 930px) {
+  footer#contatos {
+    padding-top: 50px;
+  }
+  footer#contatos #animação-texto-contatos {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
 @media screen and (max-width: 600px) {
   footer#contatos #animação-texto-contatos form #div-name-email {
     display: inline-block;

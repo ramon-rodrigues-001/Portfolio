@@ -1,18 +1,20 @@
 footer#contatos {
+    font-size: .9em;
+    font-weight: bold;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 200px;
     background-color: #010f25;
     color: $color;
     min-height: 100vh;
 
     #animação-texto-contatos {
         display: flex;
-        flex-direction: column;
-        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
         text-align: center;
         
         .btnPersonalizado {
@@ -40,7 +42,7 @@ footer#contatos {
 
         form {
             text-align: left;
-            padding: 20px;
+            padding: 10px;
             margin-top: 15px;
 
             h2 {
@@ -63,7 +65,7 @@ footer#contatos {
 
                 textarea {
                     font-weight: bold;
-                    width: 100%;
+                    width: 98%;
                     border-radius: 10px;
                     padding: 10px 20px;
                 }
@@ -76,7 +78,7 @@ footer#contatos {
                 border-radius: 10px;
                 border: solid 1.5px white;
                 margin: 30px 0px;
-                width: 280px;
+                width: 240px;
                 padding: 10px 20px;
 
                 &:hover {
@@ -89,9 +91,24 @@ footer#contatos {
     }
 }
 
+
+@media screen and (max-width: 930px) {
+    footer#contatos {
+        padding-top: 50px;
+        
+        #animação-texto-contatos {
+            flex-direction: column;
+            gap: 0px;
+        }
+    }
+}
+
+
 @media screen and (max-width: 600px) {
     footer#contatos {
+
         #animação-texto-contatos {
+
             form {
 
                 #div-name-email {
