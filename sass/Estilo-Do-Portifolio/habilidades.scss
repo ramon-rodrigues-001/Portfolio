@@ -6,7 +6,7 @@
     background-image: linear-gradient(to top, #000000, #02132B);
     color: rgb(71, 71, 71);
     padding: 10px 0px;
-    min-height: 100vh;
+    min-height: 90vh;
 
     h2 {
         color: white;
@@ -40,7 +40,7 @@
         .cards {
             color: rgb(81, 81, 81);
             text-decoration: none;
-            border: 2px solid $color;
+            border: 1px solid $color;
             border-radius: 7px;
             flex: 0 0 280px;
             cursor: pointer;
@@ -66,7 +66,7 @@
     #conteiner-resposta-abilidade {
         color: $color;
         text-align: center;
-        padding: 20px;
+        padding: 10px;
     }
 
 

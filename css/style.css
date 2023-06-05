@@ -154,7 +154,7 @@ input[type=checkbox] {
   font-size: 0.9em;
   font-weight: bold;
   border-width: 2px;
-  box-shadow: 3px 3px 3px black;
+  box-shadow: 3px 3px 3px rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 900px) {
@@ -179,7 +179,7 @@ input[type=checkbox] {
     padding: 10px;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   #header-home {
     justify-content: left;
   }
@@ -297,7 +297,7 @@ input[type=checkbox] {
   animation-iteration-count: infinite;
   padding: 25px;
   border: 1.5px solid transparent;
-  border-radius: 30%;
+  border-radius: 20%;
   max-width: 330px;
 }
 #sobre-mim #sm-direita {
@@ -344,6 +344,9 @@ input[type=checkbox] {
   }
 }
 @media screen and (max-width: 457px) {
+  #sobre-mim #sm-esquerda #img-flutuante {
+    max-width: 250px;
+  }
   #sobre-mim #texto-descartavel-1 {
     display: none;
   }
@@ -358,7 +361,7 @@ input[type=checkbox] {
   background-image: linear-gradient(to top, #000000, #02132B);
   color: rgb(71, 71, 71);
   padding: 10px 0px;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 #habilidades h2 {
   color: white;
@@ -388,7 +391,7 @@ input[type=checkbox] {
 #habilidades #conteiner-cards .cards {
   color: rgb(81, 81, 81);
   text-decoration: none;
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 7px;
   flex: 0 0 280px;
   cursor: pointer;
@@ -409,7 +412,7 @@ input[type=checkbox] {
 #habilidades #conteiner-resposta-abilidade {
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 #habilidades #btn-mais-habilidades {
   display: none;
@@ -512,7 +515,7 @@ input[type=checkbox] {
 }
 #projetos #descrition-of-project p {
   color: #31D2F2;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
 }
 #projetos input[type=radio] {

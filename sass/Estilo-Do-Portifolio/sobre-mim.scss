@@ -44,7 +44,7 @@
             animation-iteration-count: infinite;
             padding: 25px;
             border: 1.5px solid transparent;
-            border-radius: 30%;
+            border-radius: 20%;
             max-width: 330px;
         }
     }
@@ -114,6 +114,12 @@
 
 @media screen and (max-width: 457px) {
     #sobre-mim {
+        #sm-esquerda {
+            #img-flutuante {
+                max-width: 250px;
+            }
+        }
+
         #texto-descartavel-1 {
             display: none;
         }
