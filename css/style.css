@@ -40,7 +40,7 @@ input[type=checkbox] {
   overflow: hidden;
   display: inline-block;
   font-weight: bold;
-  border: 3px solid aqua;
+  border: 1px solid aqua;
   text-decoration: none;
   padding: 10px 30px;
   z-index: 999;
@@ -360,8 +360,8 @@ input[type=checkbox] {
   justify-content: center;
   background-image: linear-gradient(to top, #000000, #02132B);
   color: rgb(71, 71, 71);
-  padding: 10px 0px;
-  min-height: 90vh;
+  padding: 30px 0px 10px 0px;
+  min-height: 85vh;
 }
 #habilidades h2 {
   color: white;
@@ -658,6 +658,53 @@ footer#contatos #animação-texto-contatos .btnPersonalizado:hover::before {
 footer#contatos #animação-texto-contatos .footer-cards {
   max-width: 200px;
   margin: 10px;
+}
+footer#contatos #animação-texto-contatos form {
+  text-align: left;
+  padding: 20px;
+  margin-top: 15px;
+}
+footer#contatos #animação-texto-contatos form h2 {
+  margin-bottom: 15px;
+}
+footer#contatos #animação-texto-contatos form #div-name-email {
+  display: flex;
+  gap: 20px;
+}
+footer#contatos #animação-texto-contatos form #div-name-email input {
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 20px;
+}
+footer#contatos #animação-texto-contatos form #div-textarea textarea {
+  font-weight: bold;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+footer#contatos #animação-texto-contatos form #submit {
+  background-color: #010f25;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  border: solid 1.5px white;
+  margin: 30px 0px;
+  width: 280px;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 600px) {
+  footer#contatos #animação-texto-contatos form #div-name-email {
+    display: inline-block;
+    width: 90vw;
+  }
+  footer#contatos #animação-texto-contatos form #div-name-email input {
+    width: 100%;
+  }
+  footer#contatos #animação-texto-contatos form #div-name-email * {
+    margin: 5px 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

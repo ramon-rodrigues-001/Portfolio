@@ -36,5 +36,71 @@ footer#contatos {
             max-width: 200px;
             margin: 10px;
         }
+
+
+        form {
+            text-align: left;
+            padding: 20px;
+            margin-top: 15px;
+
+            h2 {
+                margin-bottom: 15px;
+            }
+
+            #div-name-email {
+                display: flex;
+                gap: 20px;
+
+                input {
+                    font-weight: bold;
+                    border-radius: 10px;
+                    border: none;
+                    padding: 10px 20px;
+                }
+            }
+
+            #div-textarea {
+
+                textarea {
+                    font-weight: bold;
+                    width: 100%;
+                    border-radius: 10px;
+                    padding: 10px 20px;
+                }
+            }
+
+            #submit {
+                background-color: #010f25;
+                color: white;
+                font-weight: bold;
+                border-radius: 10px;
+                border: solid 1.5px white;
+                margin: 30px 0px;
+                width: 280px;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer#contatos {
+        #animação-texto-contatos {
+            form {
+
+                #div-name-email {
+                    display: inline-block;
+                    width: 90vw;
+
+                    input {
+                        width: 100%;
+                    }
+
+                    * {
+                        margin: 5px 0px;
+                    }
+                }
+            }
+        }
     }
 }
