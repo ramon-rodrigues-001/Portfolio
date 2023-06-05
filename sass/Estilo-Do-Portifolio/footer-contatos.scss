@@ -5,7 +5,7 @@ footer#contatos {
     justify-content: center;
     align-items: center;
     gap: 200px;
-    background-image: linear-gradient(to top, #010f25 , #000000);
+    background-color: #010f25;
     color: $color;
     min-height: 100vh;
 
@@ -78,6 +78,12 @@ footer#contatos {
                 margin: 30px 0px;
                 width: 280px;
                 padding: 10px 20px;
+
+                &:hover {
+                    border: solid 1.5px aqua;
+                    box-shadow: 1px 1px 5px 1px rgba(0, 255, 255, 0.208);
+                    color: aqua;
+                }
             }
         }
     }

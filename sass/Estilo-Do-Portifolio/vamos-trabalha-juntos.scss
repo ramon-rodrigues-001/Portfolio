@@ -1,0 +1,68 @@
+#vamos-trabalhar-juntos {
+    background-image: linear-gradient(to top, #010f25 , #000000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+
+    .convite-de-trabalho {
+        background-color: rgb(239, 236, 236);
+        font-size: .9em;
+        font-weight: bold;
+        text-align: center;
+        padding: 30px;
+        border-radius: 30px;
+        margin: 20px auto;
+        width: 90vw;
+        max-width: 900px;
+
+        button {
+            position: relative;
+            background-color: rgb(239, 236, 236);
+            color: black;
+            border-radius: 20px;
+            border-color: black;
+            width: 40%;
+            min-width: 280px;
+            border-width: 2px;
+            z-index: 1;
+
+            &:hover {
+                &::before {
+                    background-color: aqua;
+                    height: 600%;
+                }
+            }
+
+            i {
+                position: absolute;
+                left: 50px;
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    #vamos-trabalhar-juntos {
+    
+    
+        .convite-de-trabalho {
+            padding: 10px;
+    
+            button {
+                min-width: 240px;
+    
+    
+                i {
+                    position: absolute;
+                    left: 20px;
+                    font-size: 1em;
+                }
+            }
+        }
+    }    
+}

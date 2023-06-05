@@ -626,6 +626,59 @@ input[type=checkbox] {
     display: flex;
   }
 }
+#vamos-trabalhar-juntos {
+  background-image: linear-gradient(to top, #010f25, #000000);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+#vamos-trabalhar-juntos .convite-de-trabalho {
+  background-color: rgb(239, 236, 236);
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px;
+  border-radius: 30px;
+  margin: 20px auto;
+  width: 90vw;
+  max-width: 900px;
+}
+#vamos-trabalhar-juntos .convite-de-trabalho button {
+  position: relative;
+  background-color: rgb(239, 236, 236);
+  color: black;
+  border-radius: 20px;
+  border-color: black;
+  width: 40%;
+  min-width: 280px;
+  border-width: 2px;
+  z-index: 1;
+}
+#vamos-trabalhar-juntos .convite-de-trabalho button:hover::before {
+  background-color: aqua;
+  height: 600%;
+}
+#vamos-trabalhar-juntos .convite-de-trabalho button i {
+  position: absolute;
+  left: 50px;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 400px) {
+  #vamos-trabalhar-juntos .convite-de-trabalho {
+    padding: 10px;
+  }
+  #vamos-trabalhar-juntos .convite-de-trabalho button {
+    min-width: 240px;
+  }
+  #vamos-trabalhar-juntos .convite-de-trabalho button i {
+    position: absolute;
+    left: 20px;
+    font-size: 1em;
+  }
+}
 footer#contatos {
   position: relative;
   display: flex;
@@ -633,7 +686,7 @@ footer#contatos {
   justify-content: center;
   align-items: center;
   gap: 200px;
-  background-image: linear-gradient(to top, #010f25, #000000);
+  background-color: #010f25;
   color: white;
   min-height: 100vh;
 }
@@ -692,6 +745,11 @@ footer#contatos #animação-texto-contatos form #submit {
   margin: 30px 0px;
   width: 280px;
   padding: 10px 20px;
+}
+footer#contatos #animação-texto-contatos form #submit:hover {
+  border: solid 1.5px aqua;
+  box-shadow: 1px 1px 5px 1px rgba(0, 255, 255, 0.208);
+  color: aqua;
 }
 
 @media screen and (max-width: 600px) {
