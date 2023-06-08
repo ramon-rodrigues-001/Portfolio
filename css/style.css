@@ -7,6 +7,7 @@
 
 #container-hmf {
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 #container-hmf {
@@ -43,7 +44,7 @@ input[type=checkbox] {
   border: 1px solid aqua;
   text-decoration: none;
   padding: 10px 30px;
-  z-index: 999;
+  z-index: 99;
   transition: 0.7s ease;
 }
 .btnPersonalizado::before {
@@ -105,6 +106,7 @@ input[type=checkbox] {
   padding: 3px;
   width: 100vw;
   height: 63px;
+  z-index: 999;
 }
 #header-home #logo {
   font-size: 2em;
