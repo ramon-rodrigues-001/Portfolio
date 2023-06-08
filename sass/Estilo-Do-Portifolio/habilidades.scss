@@ -1,5 +1,6 @@
 
 #habilidades {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,16 +39,16 @@
         }
 
         .cards {
-            color: rgb(81, 81, 81);
-            text-decoration: none;
             border: 1px solid $color;
             border-radius: 7px;
             flex: 0 0 280px;
+            width: 280px;
             cursor: pointer;
-            
-            &.impar {
-                position: relative;
-                transform: translateY(-15px);
+
+            a {
+                color: rgb(81, 81, 81);
+                text-decoration: none;
+                
             }
 
             &:hover {

@@ -355,6 +355,7 @@ input[type=checkbox] {
   }
 }
 #habilidades {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -389,16 +390,15 @@ input[type=checkbox] {
   transition: 0.5s;
 }
 #habilidades #conteiner-cards .cards {
-  color: rgb(81, 81, 81);
-  text-decoration: none;
   border: 1px solid white;
   border-radius: 7px;
   flex: 0 0 280px;
+  width: 280px;
   cursor: pointer;
 }
-#habilidades #conteiner-cards .cards.impar {
-  position: relative;
-  transform: translateY(-15px);
+#habilidades #conteiner-cards .cards a {
+  color: rgb(81, 81, 81);
+  text-decoration: none;
 }
 #habilidades #conteiner-cards .cards:hover {
   border: 2px solid #31D2F2;

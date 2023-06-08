@@ -1,6 +1,5 @@
 
 // Barra de progresso
-
 export function indicaProgresso() {
 
     const scroll = document.documentElement.scrollTop
