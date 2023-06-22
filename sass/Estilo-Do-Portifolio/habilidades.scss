@@ -48,12 +48,10 @@
             a {
                 color: rgb(81, 81, 81);
                 text-decoration: none;
-                
             }
 
             &:hover {
-                border: 2px solid $info;
-                box-shadow: 0px 1px 2px 1px $info;
+                border: 1px solid $info;
                 transition: .7s ease;
 
                 .iconHabilits {
