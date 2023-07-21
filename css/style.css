@@ -250,11 +250,11 @@ input[type=checkbox] {
 #scroll #barra-de-scroll {
   background-color: #31D2F2;
   box-shadow: 0px 0px 30px 0px #31D2F2;
-  height: 2px;
+  height: 1.8px;
   width: 0%;
   position: fixed;
   top: 60px;
-  z-index: 11;
+  z-index: 999;
 }
 
 @keyframes img-flutuante {

@@ -10,31 +10,31 @@ export const clicarEmCards = function (ev) {
     let elemento = ev.currentTarget
 
     switch (elemento.id) {
-        case 'h1':
+        case 'hab-1':
             html()
             break
-        case 'h2':
+        case 'hab-2':
             css()
             break
-        case 'h3':
+        case 'hab-3':
             javascript()
             break
-        case 'h4':
+        case 'hab-4':
             sass()
             break
-        case 'h5':
+        case 'hab-5':
             bootstrap()
             break
-        case 'h6':
+        case 'hab-6':
             python()
             break
-        case 'h7':
-            git()
+        case 'hab-7':
+            node()
             break
-        case 'h8':
+        case 'hab-8':
             typescript()
             break
-        case 'h9':
+        case 'hab-9':
             bulma()
             break
     }
@@ -60,8 +60,8 @@ function bootstrap() {
 function python() {
     criar("React", 'Iniciei recentemente os estudos em React, após ter concluído o curso avançado de JavaScript da OneBitCode. A proposta dessa tecnologia é incrível e considero que seja o próximo passo para aperfeiçoar meus conhecimentos. Dessa forma, pretendo refazer meus projetos utilizando essa ferramenta poderosa.')
 }
-function git() {
-    criar('Git')
+function node() {
+    criar('Node')
 }
 function typescript() {
     criar('TypeScript', "TypeScript pode ser a escolha certa para desenvolver código mais seguro, modular e fácil de manter.")
