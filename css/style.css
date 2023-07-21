@@ -102,6 +102,7 @@ input[type=checkbox] {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-bottom: solid 0.5px #5283c7;
   z-index: 10;
   padding: 3px;
   width: 100vw;
