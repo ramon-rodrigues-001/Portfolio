@@ -87,13 +87,20 @@ function criar_Descrition(title, text, [...icones]) {
     p.dataset.aos = 'flip-right'
 
 
+    
     const divIcones = document.createElement('div')
+    
     icones.forEach((e)=> {
         // <img src="" alt=""></img>
         const icon = document.createElement('img')
         icon.src = `${e}`
         icon.classList.add("icones-de-desenvolvimento")
-        divIcones.appendChild(icon)
+
+        const linkParaDireitos = document.createElement('a')
+        linkParaDireitos.appendChild(icon)
+        linkParaDireitos.href = 'https://icons8.com.br/icons'
+        linkParaDireitos.target = '_brank'
+        divIcones.appendChild(linkParaDireitos)
     })
 
 
@@ -105,13 +112,16 @@ function criar_Descrition(title, text, [...icones]) {
 
 
 const input_slider_1 = document.querySelector('#input-slider-1').addEventListener('change', ()=> {
-    criar_Descrition("God Of War", "O projeto consiste em uma página de informações sobre o jogo 'God of War Ragnarök', que apresenta modo de jogar, personagens e trailer. Este projeto tem como foco o desenvolvimento da interfaçe não tendo um back-end robusto. Para a criação utilizei as tecnologias HTML, CSS, Sass, Bootstrap e JavaScript.")
+    criar_Descrition("God Of War", "O projeto consiste em uma página de informações sobre o jogo 'God of War Ragnarök', que apresenta modo de jogar, personagens e trailer. Este projeto tem como foco o desenvolvimento da interfaçe não tendo um back-end robusto. Para a criação utilizei as tecnologias HTML, CSS, Sass, Bootstrap e JavaScript.", 
+    ["public/icone-habilidades/html.png", "public/icone-habilidades/css.png", "public/icone-habilidades/javascript.png", "public/icone-habilidades/sass.png", "public/icone-habilidades/bootstrap.png"])
 })
 
 const input_slider_2 = document.querySelector('#input-slider-2').addEventListener('change', ()=> {
-    criar_Descrition("Blizzard", "Inspirado na página de jogos da Blizzard, este é considera por mim o meu projeto mais bonito sendo tambem o meu favorito, foi possível implementar soluções criativas e adaptá-las às necessidades do projeto. Tecnologias HTML, CSS, JavaScript, Sass e Bootstrap")
+    criar_Descrition("Blizzard", "Inspirado na página de jogos da Blizzard, este é considera por mim o meu projeto mais bonito sendo tambem o meu favorito, foi possível implementar soluções criativas e adaptá-las às necessidades do projeto. Tecnologias HTML, CSS, JavaScript, Sass e Bootstrap", 
+    ["public/icone-habilidades/html.png", "public/icone-habilidades/css.png", "public/icone-habilidades/javascript.png", "public/icone-habilidades/sass.png", "public/icone-habilidades/bootstrap.png"])
 })
 
 const input_slider_3 = document.querySelector('#input-slider-3').addEventListener('change', ()=> {
-    criar_Descrition("Leitor Livre", "Este é o projeto mais grandioso que já empreendi, representando também a maior fonte de aprendizado e aprimoramento das minhas habilidades. Trata-se de um website dedicado a disponibilizar gratuitamente livros em formato PD", ["public/icons8-html-5-50.png"])
+    criar_Descrition("Leitor Livre", "Este é o projeto mais grandioso que já empreendi, representando também a maior fonte de aprendizado e aprimoramento das minhas habilidades. Trata-se de um website dedicado a disponibilizar gratuitamente livros em formato PD", 
+    ["public/icone-habilidades/html.png", "public/icone-habilidades/css.png", "public/icone-habilidades/javascript.png", "public/icone-habilidades/sass.png", "public/icone-habilidades/bootstrap.png", "public/icone-habilidades/react.png", "public/icone-habilidades/npm.png"])
 })

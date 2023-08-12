@@ -32,10 +32,10 @@ export const clicarEmCards = function (ev) {
             node()
             break
         case 'hab-8':
-            typescript()
+            mongo()
             break
         case 'hab-9':
-            bulma()
+            express()
             break
     }
 }
@@ -46,13 +46,13 @@ function html() {
     criar('HTML5', 'O esqueleto do projeto é o que dá a base para o desenvolvimento da aplicação. Com boas práticas é possível criar um projeto consistente e padronizado, isso torna a aplicação mais fácil de ser entendida e mantida no futuro, além de garantir uma melhor experiência para o usuário final.')
 }
 function css() {
-    criar('CSS', 'Esse ferramenta vai dar uma boa dor de cabeça kkkk. Brincadeira CSS é a melhor parte e é uma parte fundamental do desenvolvimento web. ainda mais com a suas extneções como o "SASS"')
+    criar('CSS', '(Cascading Style Sheets) é uma linguagem que define o estilo e a aparência de elementos em páginas web HTML.. deixando o site atraente, ainda mais com sua exteção o SASS')
 }
 function javascript() {
-    criar('JavaScript', 'Atualmente, estou estudando JavaScript e é impressionante como não há fim para o aprendizado nessa linguagem. Estou sempre me dedicando a estudá-la.')
+    criar('JavaScript', '(JS) esta é força motriz por trás da magia interativa na web, capacitando páginas a ganharem vida com animações deslumbrantes, validação de formulários instantânea e dinamismo que cativa os visitantes. É a ferramenta essencial para transformar ideias em experiências cativantes e envolventes na internet.')
 }
 function sass() {
-    criar('Sass', 'Que ferramenta incrível!, o SASS permite a criação de folhas de estilo mais organizadas e fáceis de manter, reduzindo o tempo e o esforço necessários para realizar alterações e atualizações')
+    criar('Sass', 'O SASS é uma ferramenta verdadeiramente impressionante! Ao viabilizar a criação de folhas de estilo altamente organizadas e de fácil manutenção, ele encurta consideravelmente o tempo e esforço exigidos para efetuar alterações e atualizações, resultando em um fluxo de trabalho mais eficiente e menos complicado.')
 }
 function bootstrap() {
     criar('Bootstrap', 'Esta ferramneta busca agilizar o processo de criação de interfaces web, tornando-o mais eficiente, produtivo e consistente.')
@@ -61,13 +61,13 @@ function python() {
     criar("React", 'Iniciei recentemente os estudos em React, após ter concluído o curso avançado de JavaScript da OneBitCode. A proposta dessa tecnologia é incrível e considero que seja o próximo passo para aperfeiçoar meus conhecimentos. Dessa forma, pretendo refazer meus projetos utilizando essa ferramenta poderosa.')
 }
 function node() {
-    criar('Node')
+    criar('Node', 'Node.js revolucionou o uso do JavaScript ao possibilitar a criação de servidores escaláveis e aplicações de alto desempenho, com arquitetura baseada em eventos para serviços web rápidos e em tempo real.')
 }
-function typescript() {
-    criar('TypeScript', "TypeScript pode ser a escolha certa para desenvolver código mais seguro, modular e fácil de manter.")
+function mongo() {
+    criar('MongoDB', "MongoDB, meu primeiro banco de dados estudado, é uma poderosa plataforma NoSQL orientada a documentos, oferecendo flexibilidade única, escalabilidade e capacidade de lidar com estruturas de dados variáveis, tornando-o uma escolha moderna para aplicações adaptáveis e eficientes de gerenciamento de dados.")
 }
-function bulma() {
-    criar('Bulma', "")
+function express() {
+    criar('Express', "Express é um framework minimalista para Node.js que simplifica a criação de aplicações web robustas e eficientes, oferecendo recursos como roteamento, gerenciamento de requisições e respostas, tornando o processo de desenvolvimento mais ágil e estruturado.")
 }
 
 
