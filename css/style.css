@@ -519,6 +519,9 @@ input[type=checkbox] {
   font-size: 1em;
   font-weight: bold;
 }
+#projetos #descrition-of-project .icones-de-desenvolvimento {
+  max-width: 40px;
+}
 #projetos input[type=radio] {
   display: none;
 }

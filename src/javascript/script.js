@@ -69,7 +69,7 @@ window.onscroll = function() {
 
 // MUDAR DESCRIÇÃO DO PROJETO DE ACORDO COM INPUT CHECHECK
 
-function criar_Descrition(title, text) {
+function criar_Descrition(title, text, [...icones]) {
     const container_De_Descrition = document.querySelector('#descrition-of-project')
     container_De_Descrition.innerText = ''
 
@@ -87,10 +87,22 @@ function criar_Descrition(title, text) {
     p.dataset.aos = 'flip-right'
 
 
+    const divIcones = document.createElement('div')
+    icones.forEach((e)=> {
+        // <img src="" alt=""></img>
+        const icon = document.createElement('img')
+        icon.src = `${e}`
+        icon.classList.add("icones-de-desenvolvimento")
+        divIcones.appendChild(icon)
+    })
+
+
     h2.appendChild(span)
     container_De_Descrition.appendChild(h2)
     container_De_Descrition.appendChild(p)
+    container_De_Descrition.appendChild(divIcones)
 }
+
 
 const input_slider_1 = document.querySelector('#input-slider-1').addEventListener('change', ()=> {
     criar_Descrition("God Of War", "O projeto consiste em uma página de informações sobre o jogo 'God of War Ragnarök', que apresenta modo de jogar, personagens e trailer. Este projeto tem como foco o desenvolvimento da interfaçe não tendo um back-end robusto. Para a criação utilizei as tecnologias HTML, CSS, Sass, Bootstrap e JavaScript.")
@@ -101,5 +113,5 @@ const input_slider_2 = document.querySelector('#input-slider-2').addEventListene
 })
 
 const input_slider_3 = document.querySelector('#input-slider-3').addEventListener('change', ()=> {
-    criar_Descrition("SpaceX", "Este é um projeto que desenvolvi há algum tempo, e embora esteja desatualizado em relação às minhas novas habilidades, optei por mantê-lo aqui, pois planejo atualizá-lo em breve com o uso do React e outras tecnologias mais modernas. Estou animado para melhorar seu desempenho e torná-lo uma referência do meu trabalho atual.")
+    criar_Descrition("Leitor Livre", "Este é o projeto mais grandioso que já empreendi, representando também a maior fonte de aprendizado e aprimoramento das minhas habilidades. Trata-se de um website dedicado a disponibilizar gratuitamente livros em formato PD", ["public/icons8-html-5-50.png"])
 })
