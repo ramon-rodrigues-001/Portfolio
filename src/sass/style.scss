@@ -1,9 +1,6 @@
 // Variaveis cor/fontes/etc
 @import "Variaveis/variaveis.scss";
 
-// Estilo Geral
-@import "Estilo-Do-Portifolio/geral-para-todas.scss";
-
 // Estilo do Header
 @import "Estilo-Do-Portifolio/header.scss";
 
@@ -21,3 +18,6 @@
 
 // Estilo da parte [Footer / Contatos]
 @import "Estilo-Do-Portifolio/footer-contatos.scss";
+
+// Estilo Geral
+@import "Estilo-Do-Portifolio/geral-para-todas.scss";
