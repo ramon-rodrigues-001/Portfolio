@@ -6,7 +6,7 @@
 <h3>Oi! Espero que esteja bem. 😊<br>
 Bem-vindo ao meu portfólio pessoal, onde você pode me conhecer melhor e explorar meus melhores projetos.</h3>
 
-<img src="./imagens/Projeto-portfolio-img-completa.png" alt="Imagem do portfólio" width=50%>
+<img src="./public/Projeto-portfolio-img-completa.png" alt="Imagem do portfólio" width=30%>
 
 <hr>
 <div display=inline-block>
@@ -34,7 +34,7 @@ Bem-vindo ao meu portfólio pessoal, onde você pode me conhecer melhor e explor
   <hr>
   <h2>🔗 Links</h2>
   <ul>
-    <li><a href="https://ramon-rodrigues-001.github.io/Portifolio/" target="_blank">Ver Site Hospedado "Deploy"</a></li>
+    <li><a href="https://ramon-rodrigues-001.github.io/Portifolio/" target="_blank"><strong>Ver Site Hospedado "Deploy"</strong></a></li>
     <li><a href="https://michalsnik.github.io/aos/" target="_blank">Biblioteca de animação de texto: AOS Animation</a></li>
     <li><a href="https://micku7zu.github.io/vanilla-tilt.js/" target="_blank">Biblioteca de animação de cards: Vanilla-tilt-js</a></li>
   </ul>
