@@ -345,7 +345,7 @@
   }
 }
 #projetos {
-  background: #02132B url(../imagens/background-projetos.jpg) center center no-repeat;
+  background: #02132B url(../public/background-projetos.jpg) center center no-repeat;
   background-size: cover;
   color: rgb(255, 255, 255);
   display: flex;
